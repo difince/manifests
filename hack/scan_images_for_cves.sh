@@ -24,10 +24,7 @@ for file in "$IMAGE_LISTS_DIR"/*; do
     echo "Scanning images from file: $file"
       # Read the image names from the file and iterate through them
       while IFS= read -r image_name; do
-          # Run your CVE scanning command for each image
-          # Replace the following line with your actual scanning command
           echo "> Scanning image: $image_name"
-
           trivy  image "$image_name" --scanners vuln -q >> "$cve_filename"
 
           # Check the exit code of Trivy
