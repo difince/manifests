@@ -16,7 +16,7 @@ fi
 CVE_REPORTS_DIR="../docs/cve-reports/"
 mkdir -p "$CVE_REPORTS_DIR"
 
-# Iterate through each file in the directory (excluding hidden files)
+# Iterate through each file in the directory 
 for file in "$IMAGE_LISTS_DIR"/*; do
     # Extract the file name without the path
     filename=$(basename "$file")
