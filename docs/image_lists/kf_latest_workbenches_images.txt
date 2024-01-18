@@ -1,4 +1,3 @@
-$VOLUME_VIEWER_IMAGE
 docker.io/kubeflownotebookswg/centraldashboard:v1.8.0-rc.0
 docker.io/kubeflownotebookswg/jupyter-web-app:v1.8.0-rc.0
 docker.io/kubeflownotebookswg/kfam:v1.8.0-rc.0
