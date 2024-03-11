@@ -1,0 +1,4714 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:6a4c6cda-89c1-4ecb-9bb3-2274c9beb480",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-03-11T14:41:00+02:00",
+    "tools": [
+      {
+        "vendor": "anchore",
+        "name": "syft",
+        "version": "0.90.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "831fdce972fa0fca",
+      "type": "container",
+      "name": "gcr.io/knative-releases/knative.dev/serving/cmd/webhook",
+      "version": "sha256:4305209ce498caf783f39c8f3e85dfa635ece6947033bf50b0b627983fd65953"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:deb/debian/base-files@11.1+deb11u7?arch=amd64&distro=debian-11&package-id=d459a17da976b16d",
+      "type": "library",
+      "publisher": "Santiago Vila <sanvila@debian.org>",
+      "name": "base-files",
+      "version": "11.1+deb11u7",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:base-files:base-files:11.1\\+deb11u7:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/base-files@11.1+deb11u7?arch=amd64&distro=debian-11",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base-files:base_files:11.1\\+deb11u7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base_files:base-files:11.1\\+deb11u7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base_files:base_files:11.1\\+deb11u7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base:base-files:11.1\\+deb11u7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base:base_files:11.1\\+deb11u7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:e023e0e48e6e29e90e519f4dd356d058ff2bffbd16e28b802f3b8f93aa4ccb17"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/base-files/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e023e0e48e6e29e90e519f4dd356d058ff2bffbd16e28b802f3b8f93aa4ccb17"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/base-files"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:e023e0e48e6e29e90e519f4dd356d058ff2bffbd16e28b802f3b8f93aa4ccb17"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/var/lib/dpkg/status.d/base-files.md5sums"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "341"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/contrib.go.opencensus.io/exporter/ocagent@v0.7.1-0.20200907061046-05415f1de66d?package-id=ea6ed93eaf7f2a4d",
+      "type": "library",
+      "name": "contrib.go.opencensus.io/exporter/ocagent",
+      "version": "v0.7.1-0.20200907061046-05415f1de66d",
+      "cpe": "cpe:2.3:a:exporter:ocagent:v0.7.1-0.20200907061046-05415f1de66d:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/contrib.go.opencensus.io/exporter/ocagent@v0.7.1-0.20200907061046-05415f1de66d",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:LblfooH1lKOpp1hIhukktmSAxFkqMPFk9KR6iZ0MJNI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/contrib.go.opencensus.io/exporter/prometheus@v0.4.0?package-id=f146cd69d9d841db",
+      "type": "library",
+      "name": "contrib.go.opencensus.io/exporter/prometheus",
+      "version": "v0.4.0",
+      "cpe": "cpe:2.3:a:exporter:prometheus:v0.4.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/contrib.go.opencensus.io/exporter/prometheus@v0.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:0QfIkj9z/iVZgK31D9H9ohjjIDApI2GOPScCKwxedbs="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/beorn7/perks@v1.0.1?package-id=977f7bfd9acf623b",
+      "type": "library",
+      "name": "github.com/beorn7/perks",
+      "version": "v1.0.1",
+      "cpe": "cpe:2.3:a:beorn7:perks:v1.0.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/beorn7/perks@v1.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/blang/semver/v4@v4.0.0?package-id=d602894052543906",
+      "type": "library",
+      "name": "github.com/blang/semver/v4",
+      "version": "v4.0.0",
+      "cpe": "cpe:2.3:a:blang:semver\\/v4:v4.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/blang/semver/v4@v4.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:1PFHFE6yCCTv8C1TeyNNarDzntLi7wMI5i/pzqYIsAM="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/blendle/zapdriver@v1.3.1?package-id=7bdb7f269c89b960",
+      "type": "library",
+      "name": "github.com/blendle/zapdriver",
+      "version": "v1.3.1",
+      "cpe": "cpe:2.3:a:blendle:zapdriver:v1.3.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/blendle/zapdriver@v1.3.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:C3dydBOWYRiOk+B8X9IVZ5IOe+7cl+tGOexN4QqHfpE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/census-instrumentation/opencensus-proto@v0.3.0?package-id=752548d8b6f05f2e",
+      "type": "library",
+      "name": "github.com/census-instrumentation/opencensus-proto",
+      "version": "v0.3.0",
+      "cpe": "cpe:2.3:a:census-instrumentation:opencensus-proto:v0.3.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/census-instrumentation/opencensus-proto@v0.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:census-instrumentation:opencensus_proto:v0.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:census_instrumentation:opencensus-proto:v0.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:census_instrumentation:opencensus_proto:v0.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:census:opencensus-proto:v0.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:census:opencensus_proto:v0.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:t/LhUZLVitR1Ow2YOnduCsavhwFUklBMoGVYUCqmCqk="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/cespare/xxhash/v2@v2.1.2?package-id=bb9a517aa4651c8d",
+      "type": "library",
+      "name": "github.com/cespare/xxhash/v2",
+      "version": "v2.1.2",
+      "cpe": "cpe:2.3:a:cespare:xxhash\\/v2:v2.1.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/cespare/xxhash/v2@v2.1.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:YRXhKfTDauu4ajMg1TPgFO5jnlC2HCbmLXMcTG5cbYE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/davecgh/go-spew@v1.1.1?package-id=0210a0e9f404877c",
+      "type": "library",
+      "name": "github.com/davecgh/go-spew",
+      "version": "v1.1.1",
+      "cpe": "cpe:2.3:a:davecgh:go-spew:v1.1.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:davecgh:go_spew:v1.1.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/emicklei/go-restful/v3@v3.9.0?package-id=0d5b05dd62094077",
+      "type": "library",
+      "name": "github.com/emicklei/go-restful/v3",
+      "version": "v3.9.0",
+      "cpe": "cpe:2.3:a:emicklei:go-restful\\/v3:v3.9.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/emicklei/go-restful/v3@v3.9.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:emicklei:go_restful\\/v3:v3.9.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:XwGDlfxEnQZzuopoqxwSEllNcCOM9DhhFyhFIIGKwxE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/evanphx/json-patch/v5@v5.6.0?package-id=bd344b44b9e4ba95",
+      "type": "library",
+      "name": "github.com/evanphx/json-patch/v5",
+      "version": "v5.6.0",
+      "cpe": "cpe:2.3:a:evanphx:json-patch\\/v5:v5.6.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/evanphx/json-patch/v5@v5.6.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:evanphx:json_patch\\/v5:v5.6.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:b91NhWfaz02IuVxO9faSllyAtNXHMPkC5J8sJCLunww="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-kit/log@v0.1.0?package-id=12e0f89b3f282bb0",
+      "type": "library",
+      "name": "github.com/go-kit/log",
+      "version": "v0.1.0",
+      "cpe": "cpe:2.3:a:go-kit:log:v0.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-kit/log@v0.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_kit:log:v0.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:log:v0.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:DGJh0Sm43HbOeYDNnVZFl8BvcYVvjD5bqYJvp0REbwQ="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-logfmt/logfmt@v0.5.0?package-id=499b9e5bf7e11c37",
+      "type": "library",
+      "name": "github.com/go-logfmt/logfmt",
+      "version": "v0.5.0",
+      "cpe": "cpe:2.3:a:go-logfmt:logfmt:v0.5.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-logfmt/logfmt@v0.5.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_logfmt:logfmt:v0.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:logfmt:v0.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:TrB8swr/68K7m9CcGut2g3UOihhbcbiMAYiuTXdEih4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-logr/logr@v1.2.3?package-id=2195ca7cb0d5c27b",
+      "type": "library",
+      "name": "github.com/go-logr/logr",
+      "version": "v1.2.3",
+      "cpe": "cpe:2.3:a:go-logr:logr:v1.2.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-logr/logr@v1.2.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_logr:logr:v1.2.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:logr:v1.2.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:2DntVwHkVopvECVRSlL5PSo9eG+cAkDCuckLubN+rq0="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-openapi/jsonpointer@v0.19.5?package-id=cb38c5a5025f4098",
+      "type": "library",
+      "name": "github.com/go-openapi/jsonpointer",
+      "version": "v0.19.5",
+      "cpe": "cpe:2.3:a:go-openapi:jsonpointer:v0.19.5:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-openapi/jsonpointer@v0.19.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_openapi:jsonpointer:v0.19.5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:jsonpointer:v0.19.5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:gZr+CIYByUqjcgeLXnQu2gHYQC9o73G2XUeOFYEICuY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-openapi/jsonreference@v0.20.0?package-id=c6b7062bb38de7fb",
+      "type": "library",
+      "name": "github.com/go-openapi/jsonreference",
+      "version": "v0.20.0",
+      "cpe": "cpe:2.3:a:go-openapi:jsonreference:v0.20.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-openapi/jsonreference@v0.20.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_openapi:jsonreference:v0.20.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:jsonreference:v0.20.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:MYlu0sBgChmCfJxxUKZ8g1cPWFOB37YSZqewK7OKeyA="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-openapi/swag@v0.22.3?package-id=2d801e59d34e6a68",
+      "type": "library",
+      "name": "github.com/go-openapi/swag",
+      "version": "v0.22.3",
+      "cpe": "cpe:2.3:a:go-openapi:swag:v0.22.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-openapi/swag@v0.22.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_openapi:swag:v0.22.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:swag:v0.22.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:yMBqmnQ0gyZvEb/+KzuWZOXgllrXT4SADYbvDaXHv/g="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gobuffalo/flect@v0.2.4?package-id=11abe8fbe9e47615",
+      "type": "library",
+      "name": "github.com/gobuffalo/flect",
+      "version": "v0.2.4",
+      "cpe": "cpe:2.3:a:gobuffalo:flect:v0.2.4:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gobuffalo/flect@v0.2.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:BSYA8+T60cdyq+vynaSUjqSVI9mDEg9ZfQUXKmfjo4I="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gogo/protobuf@v1.3.2?package-id=cd8d7e32742526e6",
+      "type": "library",
+      "name": "github.com/gogo/protobuf",
+      "version": "v1.3.2",
+      "cpe": "cpe:2.3:a:gogo:protobuf:v1.3.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gogo/protobuf@v1.3.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:Ov1cvc58UF3b5XjBnZv7+opcTcQFZebYjWzi34vdm4Q="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da?package-id=802f78ce28a36caf",
+      "type": "library",
+      "name": "github.com/golang/groupcache",
+      "version": "v0.0.0-20210331224755-41bb18bfe9da",
+      "cpe": "cpe:2.3:a:golang:groupcache:v0.0.0-20210331224755-41bb18bfe9da:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:oI5xCqsCo564l8iNU+DwB5epxmsaqB+rhGL0m5jtYqE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/protobuf@v1.5.2?package-id=5d3c273e958141f9",
+      "type": "library",
+      "name": "github.com/golang/protobuf",
+      "version": "v1.5.2",
+      "cpe": "cpe:2.3:a:golang:protobuf:v1.5.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/golang/protobuf@v1.5.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:ROPKBNFfQgOUMifHyP+KYbvpjbdoFNs+aK7DXlji0Tw="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/gnostic@v0.6.9?package-id=e62c83550373d986",
+      "type": "library",
+      "name": "github.com/google/gnostic",
+      "version": "v0.6.9",
+      "cpe": "cpe:2.3:a:google:gnostic:v0.6.9:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/google/gnostic@v0.6.9",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:ZK/5VhkoX835RikCHpSUJV9a+S3e1zLh59YnyWeBW+0="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/go-cmp@v0.5.9?package-id=347cdffe3ab1ba51",
+      "type": "library",
+      "name": "github.com/google/go-cmp",
+      "version": "v0.5.9",
+      "cpe": "cpe:2.3:a:google:go-cmp:v0.5.9:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/google/go-cmp@v0.5.9",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:google:go_cmp:v0.5.9:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:O2Tfq5qg4qc4AmwVlvv0oLiVAGB7enBSJ2x2DqQFi38="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/go-containerregistry@v0.13.0?package-id=3d8ddb5ea911facd",
+      "type": "library",
+      "name": "github.com/google/go-containerregistry",
+      "version": "v0.13.0",
+      "cpe": "cpe:2.3:a:google:go-containerregistry:v0.13.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/google/go-containerregistry@v0.13.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:google:go_containerregistry:v0.13.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:y1C7Z3e149OJbOPDBxLYR8ITPz8dTKqQwjErKVHJC8k="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/gofuzz@v1.2.0?package-id=a83122f870ad306f",
+      "type": "library",
+      "name": "github.com/google/gofuzz",
+      "version": "v1.2.0",
+      "cpe": "cpe:2.3:a:google:gofuzz:v1.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/google/gofuzz@v1.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:xRy4A+RhZaiKjJ1bPfwQ8sedCA+YS2YcCHW6ec7JMi0="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/uuid@v1.3.0?package-id=ef874ddb68879e70",
+      "type": "library",
+      "name": "github.com/google/uuid",
+      "version": "v1.3.0",
+      "cpe": "cpe:2.3:a:google:uuid:v1.3.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/google/uuid@v1.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gorilla/websocket@v1.4.2?package-id=bc338124f77255f1",
+      "type": "library",
+      "name": "github.com/gorilla/websocket",
+      "version": "v1.4.2",
+      "cpe": "cpe:2.3:a:gorilla:websocket:v1.4.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gorilla/websocket@v1.4.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:+/TMaTYc4QFitKJxsQ7Yye35DkWvkdLcvGKqM+x0Ufc="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/grpc-ecosystem/grpc-gateway@v1.16.0?package-id=3d1765eb7beecfd7",
+      "type": "library",
+      "name": "github.com/grpc-ecosystem/grpc-gateway",
+      "version": "v1.16.0",
+      "cpe": "cpe:2.3:a:grpc-ecosystem:grpc-gateway:v1.16.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/grpc-ecosystem/grpc-gateway@v1.16.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:grpc-ecosystem:grpc_gateway:v1.16.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:grpc_ecosystem:grpc-gateway:v1.16.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:grpc_ecosystem:grpc_gateway:v1.16.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:grpc:grpc-gateway:v1.16.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:grpc:grpc_gateway:v1.16.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:gmcG1KaJ57LophUzW0Hy8NmPhnMZb4M0+kPpLofRdBo="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/golang-lru@v0.5.4?package-id=df3d18e278e45a32",
+      "type": "library",
+      "name": "github.com/hashicorp/golang-lru",
+      "version": "v0.5.4",
+      "cpe": "cpe:2.3:a:hashicorp:golang-lru:v0.5.4:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/golang-lru@v0.5.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hashicorp:golang_lru:v0.5.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:YDjusn29QI/Das2iO9M0BHnIbxPeyuCHsjMW+lJfyTc="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/imdario/mergo@v0.3.12?package-id=7bf31dffba48f04e",
+      "type": "library",
+      "name": "github.com/imdario/mergo",
+      "version": "v0.3.12",
+      "cpe": "cpe:2.3:a:imdario:mergo:v0.3.12:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/imdario/mergo@v0.3.12",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:b6R2BslTbIEToALKP7LxUvijTsNI9TAe80pLWN2g/HU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/josharian/intern@v1.0.0?package-id=1de3e1e768e53811",
+      "type": "library",
+      "name": "github.com/josharian/intern",
+      "version": "v1.0.0",
+      "cpe": "cpe:2.3:a:josharian:intern:v1.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/josharian/intern@v1.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:vlS4z54oSdjm0bgjRigI+G1HpF+tI+9rE5LLzOg8HmY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/json-iterator/go@v1.1.12?package-id=f2c9a0ebe34cae65",
+      "type": "library",
+      "name": "github.com/json-iterator/go",
+      "version": "v1.1.12",
+      "cpe": "cpe:2.3:a:json-iterator:go:v1.1.12:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/json-iterator/go@v1.1.12",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:json_iterator:go:v1.1.12:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:json:go:v1.1.12:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:PV8peI4a0ysnczrg+LtxykD8LfKY9ML6u2jnxaEnrnM="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/kelseyhightower/envconfig@v1.4.0?package-id=23d6e19c7346683e",
+      "type": "library",
+      "name": "github.com/kelseyhightower/envconfig",
+      "version": "v1.4.0",
+      "cpe": "cpe:2.3:a:kelseyhightower:envconfig:v1.4.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/kelseyhightower/envconfig@v1.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:Im6hONhd3pLkfDFsbRgu68RDNkGF1r3dvMUtDTo2cv8="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/mailru/easyjson@v0.7.7?package-id=0cf2b75e3311e850",
+      "type": "library",
+      "name": "github.com/mailru/easyjson",
+      "version": "v0.7.7",
+      "cpe": "cpe:2.3:a:mailru:easyjson:v0.7.7:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/mailru/easyjson@v0.7.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:UGYAvKxe3sBsEDzO8ZeWOSlIQfWFlxbzLZe7hwFURr0="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2-0.20181231171920-c182affec369?package-id=9251b8f245b01bb9",
+      "type": "library",
+      "name": "github.com/matttproud/golang_protobuf_extensions",
+      "version": "v1.0.2-0.20181231171920-c182affec369",
+      "cpe": "cpe:2.3:a:matttproud:golang-protobuf-extensions:v1.0.2-0.20181231171920-c182affec369:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2-0.20181231171920-c182affec369",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:matttproud:golang_protobuf_extensions:v1.0.2-0.20181231171920-c182affec369:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:I0XW9+e1XWDxdcEniV4rQAIOPUGDq67JSCiRCgGCZLI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd?package-id=9dd022beedbba1b0",
+      "type": "library",
+      "name": "github.com/modern-go/concurrent",
+      "version": "v0.0.0-20180306012644-bacd9c7ef1dd",
+      "cpe": "cpe:2.3:a:modern-go:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern_go:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:TRLaZ9cD/w8PVh93nsPXa1VrQ6jlwL5oN8l14QlcNfg="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/modern-go/reflect2@v1.0.2?package-id=c9b0823ff7fb1d7b",
+      "type": "library",
+      "name": "github.com/modern-go/reflect2",
+      "version": "v1.0.2",
+      "cpe": "cpe:2.3:a:modern-go:reflect2:v1.0.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/modern-go/reflect2@v1.0.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern_go:reflect2:v1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern:reflect2:v1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:xBagoLtFs94CBntxluKeaWgTMpvLxC4ur3nMaC9Gz0M="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/munnerz/goautoneg@v0.0.0-20191010083416-a7dc8b61c822?package-id=a3925238f17534d1",
+      "type": "library",
+      "name": "github.com/munnerz/goautoneg",
+      "version": "v0.0.0-20191010083416-a7dc8b61c822",
+      "cpe": "cpe:2.3:a:munnerz:goautoneg:v0.0.0-20191010083416-a7dc8b61c822:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/munnerz/goautoneg@v0.0.0-20191010083416-a7dc8b61c822",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:C3w9PqII01/Oq1c1nUAm88MOHcQC9l5mIlSMApZMrHA="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/opencontainers/go-digest@v1.0.0?package-id=c4f6eeabd8b7baec",
+      "type": "library",
+      "name": "github.com/opencontainers/go-digest",
+      "version": "v1.0.0",
+      "cpe": "cpe:2.3:a:opencontainers:go-digest:v1.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/opencontainers/go-digest@v1.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opencontainers:go_digest:v1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:apOUWs51W5PlhuyGyz9FCeeBIOUDA/6nW8Oi/yOhh5U="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/pkg/errors@v0.9.1?package-id=b064300a92b7a273",
+      "type": "library",
+      "name": "github.com/pkg/errors",
+      "version": "v0.9.1",
+      "cpe": "cpe:2.3:a:pkg:errors:v0.9.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/pkg/errors@v0.9.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/client_golang@v1.12.1?package-id=c304f07e32f63512",
+      "type": "library",
+      "name": "github.com/prometheus/client_golang",
+      "version": "v1.12.1",
+      "cpe": "cpe:2.3:a:prometheus:client-golang:v1.12.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/client_golang@v1.12.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:prometheus:client_golang:v1.12.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:ZiaPsmm9uiBeaSMRznKsCDNtPCS0T3JVDGF+06gjBzk="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/client_model@v0.2.0?package-id=29c6f80faeb8cb6d",
+      "type": "library",
+      "name": "github.com/prometheus/client_model",
+      "version": "v0.2.0",
+      "cpe": "cpe:2.3:a:prometheus:client-model:v0.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/client_model@v0.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:prometheus:client_model:v0.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:uq5h0d+GuxiXLJLNABMgp2qUWDPiLvgCzz2dUR+/W/M="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/common@v0.32.1?package-id=873c0a9f4ff971c8",
+      "type": "library",
+      "name": "github.com/prometheus/common",
+      "version": "v0.32.1",
+      "cpe": "cpe:2.3:a:prometheus:common:v0.32.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/common@v0.32.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:hWIdL3N2HoUx3B8j3YN9mWor0qhY/NlEKZEaXxuIRh4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/procfs@v0.7.3?package-id=5f32ebca334125c6",
+      "type": "library",
+      "name": "github.com/prometheus/procfs",
+      "version": "v0.7.3",
+      "cpe": "cpe:2.3:a:prometheus:procfs:v0.7.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/procfs@v0.7.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:4jVXhlkAyzOScmCkXBTOLRLTz8EeU+eyjrwB/EPq0VU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/statsd_exporter@v0.21.0?package-id=c6fb0311eb3b87a9",
+      "type": "library",
+      "name": "github.com/prometheus/statsd_exporter",
+      "version": "v0.21.0",
+      "cpe": "cpe:2.3:a:prometheus:statsd-exporter:v0.21.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/statsd_exporter@v0.21.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:prometheus:statsd_exporter:v0.21.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:hA05Q5RFeIjgwKIYEdFd59xu5Wwaznf33yKI+pyX6T8="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/spf13/pflag@v1.0.5?package-id=9a8f7e3666942532",
+      "type": "library",
+      "name": "github.com/spf13/pflag",
+      "version": "v1.0.5",
+      "cpe": "cpe:2.3:a:spf13:pflag:v1.0.5:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/spf13/pflag@v1.0.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.opencensus.io@v0.23.0?package-id=7896d1e981ae330e",
+      "type": "library",
+      "name": "go.opencensus.io",
+      "version": "v0.23.0",
+      "purl": "pkg:golang/go.opencensus.io@v0.23.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:gqCw0LfLxScz8irSi8exQc7fyQ0fKQU/qnC/X8+V/1M="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/atomic@v1.9.0?package-id=7401a6ddce0f2044",
+      "type": "library",
+      "name": "go.uber.org/atomic",
+      "version": "v1.9.0",
+      "purl": "pkg:golang/go.uber.org/atomic@v1.9.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:ECmE8Bn/WFTYwEW/bpKD3M8VtR/zQVbavAoalC1PYyE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/automaxprocs@v1.4.0?package-id=79e1602154defd2d",
+      "type": "library",
+      "name": "go.uber.org/automaxprocs",
+      "version": "v1.4.0",
+      "purl": "pkg:golang/go.uber.org/automaxprocs@v1.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:CpDZl6aOlLhReez+8S3eEotD7Jx0Os++lemPlMULQP0="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/multierr@v1.6.0?package-id=df699829059ba49f",
+      "type": "library",
+      "name": "go.uber.org/multierr",
+      "version": "v1.6.0",
+      "purl": "pkg:golang/go.uber.org/multierr@v1.6.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:y6IPFStTAIT5Ytl7/XYmHvzXQ7S3g/IeZW9hyZ5thw4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/zap@v1.19.1?package-id=b98081d9388776c6",
+      "type": "library",
+      "name": "go.uber.org/zap",
+      "version": "v1.19.1",
+      "purl": "pkg:golang/go.uber.org/zap@v1.19.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:ue41HOKd1vGURxrmeKIgELGb3jPW9DMUDGtsinblHwI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/net@v0.7.0?package-id=a7f1cf39eeeacf8d",
+      "type": "library",
+      "name": "golang.org/x/net",
+      "version": "v0.7.0",
+      "cpe": "cpe:2.3:a:golang:x\\/net:v0.7.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/net@v0.7.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:rJrUqqhjsgNp7KqAIc25s9pZnjU7TUcSY7HcVZjdn1g="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/oauth2@v0.1.0?package-id=78dca415239e1f56",
+      "type": "library",
+      "name": "golang.org/x/oauth2",
+      "version": "v0.1.0",
+      "cpe": "cpe:2.3:a:golang:x\\/oauth2:v0.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/oauth2@v0.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:isLCZuhj4v+tYv7eskaN4v/TM+A1begWWgyVJDdl1+Y="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sync@v0.1.0?package-id=920c5e256e62249b",
+      "type": "library",
+      "name": "golang.org/x/sync",
+      "version": "v0.1.0",
+      "cpe": "cpe:2.3:a:golang:x\\/sync:v0.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/sync@v0.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:wsuoTGHzEhffawBOhz5CYhcrV4IdKZbEyZjBMuTp12o="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.5.0?package-id=79c4d19511825040",
+      "type": "library",
+      "name": "golang.org/x/sys",
+      "version": "v0.5.0",
+      "cpe": "cpe:2.3:a:golang:x\\/sys:v0.5.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/sys@v0.5.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:MUK/U/4lj1t1oPg0HfuXDN/Z1wv31ZJ/YcPiGccS4DU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/term@v0.5.0?package-id=f92abcbdfe8ee25a",
+      "type": "library",
+      "name": "golang.org/x/term",
+      "version": "v0.5.0",
+      "cpe": "cpe:2.3:a:golang:x\\/term:v0.5.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/term@v0.5.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:n2a8QNdAb0sZNpU9R1ALUXBbY+w51fCQDN+7EdxNBsY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/text@v0.7.0?package-id=8c0f4fa683a7da31",
+      "type": "library",
+      "name": "golang.org/x/text",
+      "version": "v0.7.0",
+      "cpe": "cpe:2.3:a:golang:x\\/text:v0.7.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/text@v0.7.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:4BRB4x83lYWy72KwLD/qYDuTu7q9PjSagHvijDw7cLo="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/time@v0.1.0?package-id=623d4169c48fa926",
+      "type": "library",
+      "name": "golang.org/x/time",
+      "version": "v0.1.0",
+      "cpe": "cpe:2.3:a:golang:x\\/time:v0.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/time@v0.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:xYY+Bajn2a7VBmTM5GikTmnK8ZuX8YgnQCqZpbBNtmA="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gomodules.xyz/jsonpatch/v2@v2.2.0?package-id=cd23058895c225b6",
+      "type": "library",
+      "name": "gomodules.xyz/jsonpatch/v2",
+      "version": "v2.2.0",
+      "cpe": "cpe:2.3:a:jsonpatch:v2:v2.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/gomodules.xyz/jsonpatch/v2@v2.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:4pT439QV83L+G9FkcCriY6EkpcK6r6bK+A5FBUMI7qY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/api@v0.96.0?package-id=108069d60df376ea",
+      "type": "library",
+      "name": "google.golang.org/api",
+      "version": "v0.96.0",
+      "cpe": "cpe:2.3:a:google:api:v0.96.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/api@v0.96.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:F60cuQPJq7K7FzsxMYHAUJSiXh2oKctHxBMbDygxhfM="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/genproto@v0.0.0-20220915135415-7fd63a7952de?package-id=65a6b3f39275d69a",
+      "type": "library",
+      "name": "google.golang.org/genproto",
+      "version": "v0.0.0-20220915135415-7fd63a7952de",
+      "cpe": "cpe:2.3:a:google:genproto:v0.0.0-20220915135415-7fd63a7952de:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/genproto@v0.0.0-20220915135415-7fd63a7952de",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:5ANeKFmGdtiputJJYeUVg8nTGA/1bEirx4CgzcnPSx8="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/grpc@v1.48.0?package-id=410d275905d5e0ec",
+      "type": "library",
+      "name": "google.golang.org/grpc",
+      "version": "v1.48.0",
+      "cpe": "cpe:2.3:a:google:grpc:v1.48.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/grpc@v1.48.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:rQOsyJ/8+ufEDJd/Gdsz7HG220Mh9HAhFHRGnIjda0w="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/protobuf@v1.28.1?package-id=e5bbc369d4fc9b9f",
+      "type": "library",
+      "name": "google.golang.org/protobuf",
+      "version": "v1.28.1",
+      "cpe": "cpe:2.3:a:google:protobuf:v1.28.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/protobuf@v1.28.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:d0NfwRgPtno5B1Wa6L2DAG+KivqkdutMf1UhdNx175w="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/inf.v0@v0.9.1?package-id=bc10fc68f316fe6e",
+      "type": "library",
+      "name": "gopkg.in/inf.v0",
+      "version": "v0.9.1",
+      "purl": "pkg:golang/gopkg.in/inf.v0@v0.9.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:73M5CoZyi3ZLMOyDlQh031Cx6N9NDJ2Vvfl76EDAgDc="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v2@v2.4.0?package-id=41e1f439d4695f3e",
+      "type": "library",
+      "name": "gopkg.in/yaml.v2",
+      "version": "v2.4.0",
+      "purl": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:D8xgwECY7CYvx+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v3@v3.0.1?package-id=848ac6055aa89ee9",
+      "type": "library",
+      "name": "gopkg.in/yaml.v3",
+      "version": "v3.0.1",
+      "purl": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/api@v0.25.4?package-id=4980dee5af9b5007",
+      "type": "library",
+      "name": "k8s.io/api",
+      "version": "v0.25.4",
+      "purl": "pkg:golang/k8s.io/api@v0.25.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:3YO8J4RtmG7elEgaWMb4HgmpS2CfY1QlaOz9nwB+ZSs="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/apiextensions-apiserver@v0.25.4?package-id=d5a5b11c1fe4e09c",
+      "type": "library",
+      "name": "k8s.io/apiextensions-apiserver",
+      "version": "v0.25.4",
+      "purl": "pkg:golang/k8s.io/apiextensions-apiserver@v0.25.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:7hu9pF+xikxQuQZ7/30z/qxIPZc2J1lFElPtr7f+B6U="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/apimachinery@v0.25.4?package-id=b9bf60ebb00ec1f3",
+      "type": "library",
+      "name": "k8s.io/apimachinery",
+      "version": "v0.25.4",
+      "purl": "pkg:golang/k8s.io/apimachinery@v0.25.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:CtXsuaitMESSu339tfhVXhQrPET+EiWnIY1rcurKnAc="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/client-go@v0.25.4?package-id=00d72f13e1a19cc8",
+      "type": "library",
+      "name": "k8s.io/client-go",
+      "version": "v0.25.4",
+      "purl": "pkg:golang/k8s.io/client-go@v0.25.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:3RNRDffAkNU56M/a7gUfXaEzdhZlYhoW8dgViGy5fn8="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/klog/v2@v2.80.2-0.20221028030830-9ae4992afb54?package-id=d513d0eb90dcc473",
+      "type": "library",
+      "name": "k8s.io/klog/v2",
+      "version": "v2.80.2-0.20221028030830-9ae4992afb54",
+      "cpe": "cpe:2.3:a:klog:v2:v2.80.2-0.20221028030830-9ae4992afb54:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/k8s.io/klog/v2@v2.80.2-0.20221028030830-9ae4992afb54",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:hWRbsoRWt44OEBnYUd4ceLy4ofBoh+p9vauWp/I5Gdg="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/kube-openapi@v0.0.0-20221012153701-172d655c2280?package-id=85fabb21e2867229",
+      "type": "library",
+      "name": "k8s.io/kube-openapi",
+      "version": "v0.0.0-20221012153701-172d655c2280",
+      "purl": "pkg:golang/k8s.io/kube-openapi@v0.0.0-20221012153701-172d655c2280",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:+70TFaan3hfJzs+7VK2o+OGxg8HsuBr/5f6tVAjDu6E="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/utils@v0.0.0-20221108210102-8e77b1f39fe2?package-id=8776804f1509a210",
+      "type": "library",
+      "name": "k8s.io/utils",
+      "version": "v0.0.0-20221108210102-8e77b1f39fe2",
+      "purl": "pkg:golang/k8s.io/utils@v0.0.0-20221108210102-8e77b1f39fe2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:GfD9OzL11kvZN5iArC6oTS7RTj7oJOIfnislxYlqTj8="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/knative.dev/caching@v0.0.0-20230418150356-05a86ad5d7db?package-id=9db6c90bd726fec3",
+      "type": "library",
+      "name": "knative.dev/caching",
+      "version": "v0.0.0-20230418150356-05a86ad5d7db",
+      "purl": "pkg:golang/knative.dev/caching@v0.0.0-20230418150356-05a86ad5d7db",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:69NjUKOsucU5tmCrnkdlULjai+2bZLHF97ZrA/v8PZI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/knative.dev/networking@v0.0.0-20230419144338-e5d04e805e50?package-id=28577d5bf70065c1",
+      "type": "library",
+      "name": "knative.dev/networking",
+      "version": "v0.0.0-20230419144338-e5d04e805e50",
+      "purl": "pkg:golang/knative.dev/networking@v0.0.0-20230419144338-e5d04e805e50",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:X9rPBYr7Vrm075q0iXTr7/0oklkYoyqvlnrUwNzcUhI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/knative.dev/pkg@v0.0.0-20230418073056-dfad48eaa5d0?package-id=87b11eeb25391e0d",
+      "type": "library",
+      "name": "knative.dev/pkg",
+      "version": "v0.0.0-20230418073056-dfad48eaa5d0",
+      "purl": "pkg:golang/knative.dev/pkg@v0.0.0-20230418073056-dfad48eaa5d0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:EFQcoUo8I4bc+U3y6tR1B3ONYZSHWUdAfI7Vh7dae8g="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/knative.dev/serving@v0.0.0-20230601162137-500756c0f325?package-id=2a6ac75f744e045e",
+      "type": "library",
+      "name": "knative.dev/serving",
+      "version": "v0.0.0-20230601162137-500756c0f325",
+      "purl": "pkg:golang/knative.dev/serving@v0.0.0-20230601162137-500756c0f325",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:-buildmode",
+          "value": "exe"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:-compiler",
+          "value": "gc"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:-trimpath",
+          "value": "true"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:CGO_ENABLED",
+          "value": "0"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOAMD64",
+          "value": "v1"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOARCH",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOOS",
+          "value": "linux"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:vcs",
+          "value": "git"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:vcs.modified",
+          "value": "false"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:vcs.revision",
+          "value": "500756c0f32596cc9d6aa0a6a2cca66962906b08"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:vcs.time",
+          "value": "2023-06-01T16:21:37Z"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/netbase@6.3?arch=all&distro=debian-11&package-id=dc6036fa60ec7385",
+      "type": "library",
+      "publisher": "Marco d'Itri <md@linux.it>",
+      "name": "netbase",
+      "version": "6.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:netbase:netbase:6.3:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/netbase@6.3?arch=all&distro=debian-11",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/netbase/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/netbase"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/var/lib/dpkg/status.d/netbase.md5sums"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "41"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/json@v0.0.0-20220713155537-f223a00ba0e2?package-id=5e367f179af356b1",
+      "type": "library",
+      "name": "sigs.k8s.io/json",
+      "version": "v0.0.0-20220713155537-f223a00ba0e2",
+      "purl": "pkg:golang/sigs.k8s.io/json@v0.0.0-20220713155537-f223a00ba0e2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:iXTIw73aPyC+oRdyqqvVJuloN1p0AC/kzH07hu3NE+k="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.3?package-id=fe69920ab162af89",
+      "type": "library",
+      "name": "sigs.k8s.io/structured-merge-diff/v4",
+      "version": "v4.2.3",
+      "cpe": "cpe:2.3:a:structured-merge-diff:v4:v4.2.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:structured_merge_diff:v4:v4.2.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:structured-merge:v4:v4.2.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:structured_merge:v4:v4.2.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:structured:v4:v4.2.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:PRbqxJClWWYMNV1dhaG4NsibJbArud9kFxnAMREiWFE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/yaml@v1.3.0?package-id=b7e73cdca64f0ad1",
+      "type": "library",
+      "name": "sigs.k8s.io/yaml",
+      "version": "v1.3.0",
+      "purl": "pkg:golang/sigs.k8s.io/yaml@v1.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:74ad48fdb2086f6a85394c37b8cac8d7b9b2fcb84cbce008d71d53cc661b187c"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/ko-app/webhook"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:a2VclLzOGrwOHDiV8EfBGhvjHvP46CtW5j6POvhYGGo="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "knative.dev/serving"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tzdata@2021a-1+deb11u10?arch=all&distro=debian-11&package-id=b5e65d160035a289",
+      "type": "library",
+      "publisher": "GNU Libc Maintainers <debian-glibc@lists.debian.org>",
+      "name": "tzdata",
+      "version": "2021a-1+deb11u10",
+      "cpe": "cpe:2.3:a:tzdata:tzdata:2021a-1\\+deb11u10:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/tzdata@2021a-1+deb11u10?arch=all&distro=debian-11",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:7bea6b893187b14fc0a759fe5f8972d1292a9c0554c87cbf485f0947c26b8a05"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/tzdata/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:7bea6b893187b14fc0a759fe5f8972d1292a9c0554c87cbf485f0947c26b8a05"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/tzdata"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:7bea6b893187b14fc0a759fe5f8972d1292a9c0554c87cbf485f0947c26b8a05"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/var/lib/dpkg/status.d/tzdata.md5sums"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "3413"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "name": "debian",
+      "version": "11",
+      "description": "Debian GNU/Linux 11 (bullseye)",
+      "swid": {
+        "tagId": "debian",
+        "name": "debian",
+        "version": "11"
+      },
+      "externalReferences": [
+        {
+          "url": "https://bugs.debian.org/",
+          "type": "issue-tracker"
+        },
+        {
+          "url": "https://www.debian.org/",
+          "type": "website"
+        },
+        {
+          "url": "https://www.debian.org/support",
+          "comment": "support",
+          "type": "other"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:distro:id",
+          "value": "debian"
+        },
+        {
+          "name": "syft:distro:prettyName",
+          "value": "Debian GNU/Linux 11 (bullseye)"
+        },
+        {
+          "name": "syft:distro:versionCodename",
+          "value": "bullseye"
+        },
+        {
+          "name": "syft:distro:versionID",
+          "value": "11"
+        }
+      ]
+    }
+  ]
+}

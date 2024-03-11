@@ -1,0 +1,6216 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:4d6d018c-b6e1-4e85-89de-0104828d48ba",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-03-11T14:39:30+02:00",
+    "tools": [
+      {
+        "vendor": "anchore",
+        "name": "syft",
+        "version": "0.90.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "04445198507ee02d",
+      "type": "container",
+      "name": "docker.io/kubeflowmanifestswg/oidc-authservice",
+      "version": "e236439"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-baselayout@3.2.0-r7?arch=x86_64&distro=alpine-3.12.8&package-id=42e427ea4d3c37c0",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "alpine-baselayout",
+      "version": "3.2.0-r7",
+      "description": "Alpine base dir structure and init scripts",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:alpine-baselayout:alpine-baselayout:3.2.0-r7:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/alpine-baselayout@3.2.0-r7?arch=x86_64&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine-baselayout:alpine_baselayout:3.2.0-r7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_baselayout:alpine-baselayout:3.2.0-r7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_baselayout:alpine_baselayout:3.2.0-r7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine:alpine-baselayout:3.2.0-r7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine:alpine_baselayout:3.2.0-r7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "c3ce4065bd8a69d20ad392d4cf006ed652c3f1a7"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "409600"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "alpine-baselayout"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "cmd:mkmntdirs"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1WGpU5dl4U99OvcQ2KILlb+d6DAk="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "/bin/sh"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "19912"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-keys@2.2-r0?arch=x86_64&distro=alpine-3.12.8&package-id=0d7e092b4329cda6",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "alpine-keys",
+      "version": "2.2-r0",
+      "description": "Public keys for Alpine Linux packages",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:alpine-keys:alpine-keys:2.2-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/alpine-keys@2.2-r0?arch=x86_64&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://alpinelinux.org",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine-keys:alpine_keys:2.2-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_keys:alpine-keys:2.2-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_keys:alpine_keys:2.2-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine:alpine-keys:2.2-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine:alpine_keys:2.2-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "a8372f3ce6e7a3f4cf28524aa729b334eb9d2fd6"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "106496"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "alpine-keys"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q13FQADwZeGEJWZBG4Ep2E6w0fm2s="
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "5460"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/apk-tools@2.10.8-r0?arch=x86_64&distro=alpine-3.12.8&package-id=5374df750b7d0182",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "apk-tools",
+      "version": "2.10.8-r0",
+      "description": "Alpine Package Keeper - package manager for alpine",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:apk-tools:apk-tools:2.10.8-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/apk-tools@2.10.8-r0?arch=x86_64&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://gitlab.alpinelinux.org/alpine/apk-tools",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apk-tools:apk_tools:2.10.8-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apk_tools:apk-tools:2.10.8-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apk_tools:apk_tools:2.10.8-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apk:apk-tools:2.10.8-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apk:apk_tools:2.10.8-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "73acfb348d126dd6ae765e208d1931bb5f4be547"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "266240"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "apk-tools"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "cmd:apk"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1B10DdyBesN91g3s1FHhOsBc23U4="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "so:libcrypto.so.1.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:2",
+          "value": "so:libssl.so.1.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:3",
+          "value": "so:libz.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "104013"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/busybox@1.31.1-r20?arch=x86_64&distro=alpine-3.12.8&package-id=6cd22e0e328186ab",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "busybox",
+      "version": "1.31.1-r20",
+      "description": "Size optimized toolbox of many common UNIX utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:busybox:busybox:1.31.1-r20:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/busybox@1.31.1-r20?arch=x86_64&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://busybox.net/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "0d639f13e315e43a11821d963031ed5b49b15a15"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "962560"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "busybox"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "/bin/sh"
+        },
+        {
+          "name": "syft:metadata:provides:1",
+          "value": "cmd:busybox"
+        },
+        {
+          "name": "syft:metadata:provides:2",
+          "value": "cmd:sh"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q186Lxu4tpPadPwtXOnY/PP0KnFzI="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "505701"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ca-certificates@20191127-r4?arch=x86_64&distro=alpine-3.12.8&package-id=bce24f72d623a7ea",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "ca-certificates",
+      "version": "20191127-r4",
+      "description": "Common CA certificates PEM files from Mozilla",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:ca-certificates:ca-certificates:20191127-r4:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/ca-certificates@20191127-r4?arch=x86_64&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca-certificates:ca_certificates:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca_certificates:ca-certificates:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca_certificates:ca_certificates:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:mozilla:ca-certificates:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:mozilla:ca_certificates:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca:ca-certificates:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca:ca_certificates:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "1ba6784c56398723ecee9aa3f6f52af6d8681eee"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "688128"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "ca-certificates"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "cmd:c_rehash"
+        },
+        {
+          "name": "syft:metadata:provides:1",
+          "value": "cmd:update-ca-certificates"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1TySMLMXx9BPus9vkYzG+WHN+yVo="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "/bin/sh"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:2",
+          "value": "so:libcrypto.so.1.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "154970"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ca-certificates-bundle@20191127-r4?arch=x86_64&upstream=ca-certificates&distro=alpine-3.12.8&package-id=6f28ec19c12b3de7",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "ca-certificates-bundle",
+      "version": "20191127-r4",
+      "description": "Pre generated bundle of Mozilla certificates",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:ca-certificates-bundle:ca-certificates-bundle:20191127-r4:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/ca-certificates-bundle@20191127-r4?arch=x86_64&upstream=ca-certificates&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca-certificates-bundle:ca_certificates_bundle:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca_certificates_bundle:ca-certificates-bundle:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca_certificates_bundle:ca_certificates_bundle:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca-certificates:ca-certificates-bundle:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca-certificates:ca_certificates_bundle:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca_certificates:ca-certificates-bundle:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca_certificates:ca_certificates_bundle:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:mozilla:ca-certificates-bundle:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:mozilla:ca_certificates_bundle:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca:ca-certificates-bundle:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca:ca_certificates_bundle:20191127-r4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "1ba6784c56398723ecee9aa3f6f52af6d8681eee"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "233472"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "ca-certificates"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "ca-certificates-cacert=20191127-r4"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1UDlC1SPAamBNHqEqA40XwCqHZKQ="
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "124464"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/puerkitobio/purell@v1.1.1?package-id=87e49accaff872c3",
+      "type": "library",
+      "name": "github.com/PuerkitoBio/purell",
+      "version": "v1.1.1",
+      "cpe": "cpe:2.3:a:PuerkitoBio:purell:v1.1.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/PuerkitoBio/purell@v1.1.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:WEQqlqaGbrPkxLJWfBwQmfEAE1Z7ONdDLqrN38tNFfI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/puerkitobio/urlesc@v0.0.0-20170810143723-de5bf2ad4578?package-id=6d6fc158feec8316",
+      "type": "library",
+      "name": "github.com/PuerkitoBio/urlesc",
+      "version": "v0.0.0-20170810143723-de5bf2ad4578",
+      "cpe": "cpe:2.3:a:PuerkitoBio:urlesc:v0.0.0-20170810143723-de5bf2ad4578:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/PuerkitoBio/urlesc@v0.0.0-20170810143723-de5bf2ad4578",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:d+Bc7a5rLufV/sSk/8dngufqelfh6jnri85riMAaF/M="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/arrikto/oidc-authservice@(devel)?package-id=83cbe1d0d2057ccc",
+      "type": "library",
+      "name": "github.com/arrikto/oidc-authservice",
+      "version": "(devel)",
+      "cpe": "cpe:2.3:a:arrikto:oidc-authservice:\\(devel\\):*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/arrikto/oidc-authservice@(devel)",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:arrikto:oidc_authservice:\\(devel\\):*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/beorn7/perks@v1.0.0?package-id=2269a85551ec657d",
+      "type": "library",
+      "name": "github.com/beorn7/perks",
+      "version": "v1.0.0",
+      "cpe": "cpe:2.3:a:beorn7:perks:v1.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/beorn7/perks@v1.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:HWo1m869IqiPhD389kmkxeTalrjNbbJTC8LXupb+sl0="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/blang/semver@v3.5.0+incompatible?package-id=4d5e99c9c3d88e40",
+      "type": "library",
+      "name": "github.com/blang/semver",
+      "version": "v3.5.0+incompatible",
+      "cpe": "cpe:2.3:a:blang:semver:v3.5.0\\+incompatible:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/blang/semver@v3.5.0+incompatible",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:CGxCgetQ64DKk7rdZ++Vfnb1+ogGNnB17OJKJXD2Cfs="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/boltdb/bolt@v1.3.1?package-id=c2c7255b2e5142d1",
+      "type": "library",
+      "name": "github.com/boltdb/bolt",
+      "version": "v1.3.1",
+      "cpe": "cpe:2.3:a:boltdb:bolt:v1.3.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/boltdb/bolt@v1.3.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:JQmyP4ZBrce+ZQu0dY660FMfatumYDLun9hBCUVIkF4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/coreos/go-oidc@v2.1.0+incompatible?package-id=119c735ab3b59acd",
+      "type": "library",
+      "name": "github.com/coreos/go-oidc",
+      "version": "v2.1.0+incompatible",
+      "cpe": "cpe:2.3:a:coreos:go-oidc:v2.1.0\\+incompatible:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/coreos/go-oidc@v2.1.0+incompatible",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:coreos:go_oidc:v2.1.0\\+incompatible:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:sdJrfw8akMnCuUlaZU3tE/uYXFgfqom8DBE9so9EBsM="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/davecgh/go-spew@v1.1.1?package-id=bc3918c9bb180035",
+      "type": "library",
+      "name": "github.com/davecgh/go-spew",
+      "version": "v1.1.1",
+      "cpe": "cpe:2.3:a:davecgh:go-spew:v1.1.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:davecgh:go_spew:v1.1.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/emirpasic/gods@v1.12.0?package-id=224bc85ff3196d3c",
+      "type": "library",
+      "name": "github.com/emirpasic/gods",
+      "version": "v1.12.0",
+      "cpe": "cpe:2.3:a:emirpasic:gods:v1.12.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/emirpasic/gods@v1.12.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:QAUIPSaCu4G+POclxeqb3F+WPpdKqFGlw36+yOzGlrg="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-logr/logr@v0.1.0?package-id=cc04420548856097",
+      "type": "library",
+      "name": "github.com/go-logr/logr",
+      "version": "v0.1.0",
+      "cpe": "cpe:2.3:a:go-logr:logr:v0.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-logr/logr@v0.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_logr:logr:v0.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:logr:v0.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:M1Tv3VzNlEHg6uyACnRdtrploV2P7wZqH8BoQMtz0cg="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-openapi/jsonpointer@v0.19.3?package-id=6e4e2ac0e8c9f354",
+      "type": "library",
+      "name": "github.com/go-openapi/jsonpointer",
+      "version": "v0.19.3",
+      "cpe": "cpe:2.3:a:go-openapi:jsonpointer:v0.19.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-openapi/jsonpointer@v0.19.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_openapi:jsonpointer:v0.19.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:jsonpointer:v0.19.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:gihV7YNZK1iK6Tgwwsxo2rJbD1GTbdm72325Bq8FI3w="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-openapi/jsonreference@v0.19.3?package-id=99c4f31889b100c1",
+      "type": "library",
+      "name": "github.com/go-openapi/jsonreference",
+      "version": "v0.19.3",
+      "cpe": "cpe:2.3:a:go-openapi:jsonreference:v0.19.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-openapi/jsonreference@v0.19.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_openapi:jsonreference:v0.19.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:jsonreference:v0.19.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:5cxNfTy0UVC3X8JL5ymxzyoUZmo8iZb+jeTWn7tUa8o="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-openapi/spec@v0.19.3?package-id=f5456bf4be33a7af",
+      "type": "library",
+      "name": "github.com/go-openapi/spec",
+      "version": "v0.19.3",
+      "cpe": "cpe:2.3:a:go-openapi:spec:v0.19.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-openapi/spec@v0.19.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_openapi:spec:v0.19.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:spec:v0.19.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:0XRyw8kguri6Yw4SxhsQA/atC88yqrk0+G4YhI2wabc="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-openapi/swag@v0.19.5?package-id=3d7c8831e99bc461",
+      "type": "library",
+      "name": "github.com/go-openapi/swag",
+      "version": "v0.19.5",
+      "cpe": "cpe:2.3:a:go-openapi:swag:v0.19.5:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-openapi/swag@v0.19.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_openapi:swag:v0.19.5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:swag:v0.19.5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:lTz6Ys4CmqqCQmZPBlbQENR1/GucA2bzYTE12Pw4tFY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gogo/protobuf@v1.3.1?package-id=e88948779bb01963",
+      "type": "library",
+      "name": "github.com/gogo/protobuf",
+      "version": "v1.3.1",
+      "cpe": "cpe:2.3:a:gogo:protobuf:v1.3.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gogo/protobuf@v1.3.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:DqDEcV5aeaTmdFBePNpYsp3FlcVH/2ISVVM9Qf8PSls="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/protobuf@v1.3.2?package-id=9c90f3ca6c087e79",
+      "type": "library",
+      "name": "github.com/golang/protobuf",
+      "version": "v1.3.2",
+      "cpe": "cpe:2.3:a:golang:protobuf:v1.3.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/golang/protobuf@v1.3.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:6nsPYzhq5kReh6QImI3k5qWzO4PEbvbIW2cwSfR/6xs="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/gofuzz@v1.1.0?package-id=26a223d2a77a66e6",
+      "type": "library",
+      "name": "github.com/google/gofuzz",
+      "version": "v1.1.0",
+      "cpe": "cpe:2.3:a:google:gofuzz:v1.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/google/gofuzz@v1.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:Hsa8mG0dQ46ij8Sl2AYJDUv1oA9/d6Vk+3LG99Oe02g="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/googleapis/gnostic@v0.3.1?package-id=03c4a9ad67488f38",
+      "type": "library",
+      "name": "github.com/googleapis/gnostic",
+      "version": "v0.3.1",
+      "cpe": "cpe:2.3:a:googleapis:gnostic:v0.3.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/googleapis/gnostic@v0.3.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:WeAefnSUHlBb0iJKwxFDZdbfGwkd7xRNuV+IpXMJhYk="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gorilla/handlers@v1.4.2?package-id=04959a4f15bd1cb9",
+      "type": "library",
+      "name": "github.com/gorilla/handlers",
+      "version": "v1.4.2",
+      "cpe": "cpe:2.3:a:gorilla:handlers:v1.4.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gorilla/handlers@v1.4.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:0QniY0USkHQ1RGCLfKxeNHK9bkDHGRYGNDFBCS+YARg="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gorilla/mux@v1.7.3?package-id=0c29c16d1ae2bf26",
+      "type": "library",
+      "name": "github.com/gorilla/mux",
+      "version": "v1.7.3",
+      "cpe": "cpe:2.3:a:gorilla:mux:v1.7.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gorilla/mux@v1.7.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:gnP5JzjVOuiZD07fKKToCAOjS0yOpj/qPETTXCCS6hw="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gorilla/securecookie@v1.1.1?package-id=e33510031044dafc",
+      "type": "library",
+      "name": "github.com/gorilla/securecookie",
+      "version": "v1.1.1",
+      "cpe": "cpe:2.3:a:gorilla:securecookie:v1.1.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gorilla/securecookie@v1.1.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:miw7JPhV+b/lAHSXz4qd/nN9jRiAFV5FwjeKyCS8BvQ="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gorilla/sessions@v1.2.0?package-id=029fd179d273762f",
+      "type": "library",
+      "name": "github.com/gorilla/sessions",
+      "version": "v1.2.0",
+      "cpe": "cpe:2.3:a:gorilla:sessions:v1.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gorilla/sessions@v1.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:S7P+1Hm5V/AT9cjEcUD5uDaQSX0OE577aCXgoaKpYbQ="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/golang-lru@v0.5.1?package-id=676ee813635edff8",
+      "type": "library",
+      "name": "github.com/hashicorp/golang-lru",
+      "version": "v0.5.1",
+      "cpe": "cpe:2.3:a:hashicorp:golang-lru:v0.5.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/golang-lru@v0.5.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hashicorp:golang_lru:v0.5.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:0hERBMJE1eitiLkihrMvRVBYAkpHzc/J3QdDN+dAcgU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/imdario/mergo@v0.3.6?package-id=26140bddc7ed64ef",
+      "type": "library",
+      "name": "github.com/imdario/mergo",
+      "version": "v0.3.6",
+      "cpe": "cpe:2.3:a:imdario:mergo:v0.3.6:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/imdario/mergo@v0.3.6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:xTNEAn+kxVO7dTZGu0CegyqKZmoWFI0rF8UxjlB2d28="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/json-iterator/go@v1.1.8?package-id=17c651512f4b63b1",
+      "type": "library",
+      "name": "github.com/json-iterator/go",
+      "version": "v1.1.8",
+      "cpe": "cpe:2.3:a:json-iterator:go:v1.1.8:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/json-iterator/go@v1.1.8",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:json_iterator:go:v1.1.8:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:json:go:v1.1.8:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:QiWkFLKq0T7mpzwOTu6BzNDbfTE8OLrYhVKYMLF46Ok="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/kelseyhightower/envconfig@v1.4.0?package-id=c141b85cad22886c",
+      "type": "library",
+      "name": "github.com/kelseyhightower/envconfig",
+      "version": "v1.4.0",
+      "cpe": "cpe:2.3:a:kelseyhightower:envconfig:v1.4.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/kelseyhightower/envconfig@v1.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:Im6hONhd3pLkfDFsbRgu68RDNkGF1r3dvMUtDTo2cv8="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/mailru/easyjson@v0.7.0?package-id=fcd198420937a2b8",
+      "type": "library",
+      "name": "github.com/mailru/easyjson",
+      "version": "v0.7.0",
+      "cpe": "cpe:2.3:a:mailru:easyjson:v0.7.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/mailru/easyjson@v0.7.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:aizVhC/NAAcKWb+5QsU1iNOZb4Yws5UO2I+aIprQITM="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.1?package-id=bc209d4e014181e0",
+      "type": "library",
+      "name": "github.com/matttproud/golang_protobuf_extensions",
+      "version": "v1.0.1",
+      "cpe": "cpe:2.3:a:matttproud:golang-protobuf-extensions:v1.0.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:matttproud:golang_protobuf_extensions:v1.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:4hp9jkHxhMHkqkrB3Ix0jegS5sx/RkqARlsWZ6pIwiU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd?package-id=021b611d67d6c15c",
+      "type": "library",
+      "name": "github.com/modern-go/concurrent",
+      "version": "v0.0.0-20180306012644-bacd9c7ef1dd",
+      "cpe": "cpe:2.3:a:modern-go:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern_go:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:TRLaZ9cD/w8PVh93nsPXa1VrQ6jlwL5oN8l14QlcNfg="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/modern-go/reflect2@v1.0.1?package-id=71c21dfc5a4ec0d2",
+      "type": "library",
+      "name": "github.com/modern-go/reflect2",
+      "version": "v1.0.1",
+      "cpe": "cpe:2.3:a:modern-go:reflect2:v1.0.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/modern-go/reflect2@v1.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern_go:reflect2:v1.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern:reflect2:v1.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:9f412s+6RmYXLWZSEzVVgPGK7C2PphHj5RJrvfx9AWI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/pkg/errors@v0.9.1?package-id=4f490fc869e01c87",
+      "type": "library",
+      "name": "github.com/pkg/errors",
+      "version": "v0.9.1",
+      "cpe": "cpe:2.3:a:pkg:errors:v0.9.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/pkg/errors@v0.9.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/pquerna/cachecontrol@v0.0.0-20180517163645-1555304b9b35?package-id=792269f9cc98ac8d",
+      "type": "library",
+      "name": "github.com/pquerna/cachecontrol",
+      "version": "v0.0.0-20180517163645-1555304b9b35",
+      "cpe": "cpe:2.3:a:pquerna:cachecontrol:v0.0.0-20180517163645-1555304b9b35:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/pquerna/cachecontrol@v0.0.0-20180517163645-1555304b9b35",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:J9b7z+QKAmPf4YLrFg6oQUotqHQeUNWwkvo7jZp1GLU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/client_golang@v1.0.0?package-id=9d46f3a577d2e0b2",
+      "type": "library",
+      "name": "github.com/prometheus/client_golang",
+      "version": "v1.0.0",
+      "cpe": "cpe:2.3:a:prometheus:client-golang:v1.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/client_golang@v1.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:prometheus:client_golang:v1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:vrDKnkGzuGvhNAL56c7DBz29ZL+KxnoR0x7enabFceM="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/client_model@v0.2.0?package-id=6d88f80798edef31",
+      "type": "library",
+      "name": "github.com/prometheus/client_model",
+      "version": "v0.2.0",
+      "cpe": "cpe:2.3:a:prometheus:client-model:v0.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/client_model@v0.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:prometheus:client_model:v0.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:uq5h0d+GuxiXLJLNABMgp2qUWDPiLvgCzz2dUR+/W/M="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/common@v0.4.1?package-id=c34bad47fda4ba1f",
+      "type": "library",
+      "name": "github.com/prometheus/common",
+      "version": "v0.4.1",
+      "cpe": "cpe:2.3:a:prometheus:common:v0.4.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/common@v0.4.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:K0MGApIoQvMw27RTdJkPbr3JZ7DNbtxQNyi5STVM6Kw="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/procfs@v0.0.2?package-id=6fe3df11ebe8707c",
+      "type": "library",
+      "name": "github.com/prometheus/procfs",
+      "version": "v0.0.2",
+      "cpe": "cpe:2.3:a:prometheus:procfs:v0.0.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/procfs@v0.0.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:6LJUbpNm42llc4HRCuvApCSWB/WfhuNo9K98Q9sNGfs="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/sirupsen/logrus@v1.4.2?package-id=7ff356b6e63248dc",
+      "type": "library",
+      "name": "github.com/sirupsen/logrus",
+      "version": "v1.4.2",
+      "cpe": "cpe:2.3:a:sirupsen:logrus:v1.4.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/sirupsen/logrus@v1.4.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:SPIRibHv4MatM3XXNO2BJeFLZwZ2LvZgfQ5+UNI2im4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/spf13/pflag@v1.0.5?package-id=4c1cb25347ca5927",
+      "type": "library",
+      "name": "github.com/spf13/pflag",
+      "version": "v1.0.5",
+      "cpe": "cpe:2.3:a:spf13:pflag:v1.0.5:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/spf13/pflag@v1.0.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/tevino/abool@v0.0.0-20170917061928-9b9efcf221b5?package-id=ce5a00be2c6a6716",
+      "type": "library",
+      "name": "github.com/tevino/abool",
+      "version": "v0.0.0-20170917061928-9b9efcf221b5",
+      "cpe": "cpe:2.3:a:tevino:abool:v0.0.0-20170917061928-9b9efcf221b5:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/tevino/abool@v0.0.0-20170917061928-9b9efcf221b5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:hNna6Fi0eP1f2sMBe/rJicDmaHmoXGe1Ta84FPYHLuE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/yosssi/boltstore@v1.0.1-0.20150916121936-36632d491655?package-id=cd675b0e156957d1",
+      "type": "library",
+      "name": "github.com/yosssi/boltstore",
+      "version": "v1.0.1-0.20150916121936-36632d491655",
+      "cpe": "cpe:2.3:a:yosssi:boltstore:v1.0.1-0.20150916121936-36632d491655:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/yosssi/boltstore@v1.0.1-0.20150916121936-36632d491655",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:6MtnxkRnXNw3zdUX/y271QqrkSw89vGpqfO76brQ7+4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/crypto@v0.0.0-20200622213623-75b288015ac9?package-id=84fed6d9468ba0ee",
+      "type": "library",
+      "name": "golang.org/x/crypto",
+      "version": "v0.0.0-20200622213623-75b288015ac9",
+      "cpe": "cpe:2.3:a:golang:x\\/crypto:v0.0.0-20200622213623-75b288015ac9:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/crypto@v0.0.0-20200622213623-75b288015ac9",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:psW17arqaxU48Z5kZ0CQnkZWQJsqcURM6tKiBApRjXI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/net@v0.0.0-20201021035429-f5854403a974?package-id=16feb0af255aa18e",
+      "type": "library",
+      "name": "golang.org/x/net",
+      "version": "v0.0.0-20201021035429-f5854403a974",
+      "cpe": "cpe:2.3:a:golang:x\\/net:v0.0.0-20201021035429-f5854403a974:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/net@v0.0.0-20201021035429-f5854403a974",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:IX6qOQeG5uLjB/hjjwjedwfjND0hgjPMMyO1RoIXQNI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/oauth2@v0.0.0-20190604053449-0f29369cfe45?package-id=ea76af8ccce0c2cc",
+      "type": "library",
+      "name": "golang.org/x/oauth2",
+      "version": "v0.0.0-20190604053449-0f29369cfe45",
+      "cpe": "cpe:2.3:a:golang:x\\/oauth2:v0.0.0-20190604053449-0f29369cfe45:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/oauth2@v0.0.0-20190604053449-0f29369cfe45",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:SVwTIAaPC2U/AvvLNZ2a7OVsmBpC8L5BlwK1whH3hm0="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sync@v0.0.0-20201020160332-67f06af15bc9?package-id=574163bf6ab0166c",
+      "type": "library",
+      "name": "golang.org/x/sync",
+      "version": "v0.0.0-20201020160332-67f06af15bc9",
+      "cpe": "cpe:2.3:a:golang:x\\/sync:v0.0.0-20201020160332-67f06af15bc9:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/sync@v0.0.0-20201020160332-67f06af15bc9",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:SQFwaSi55rU7vdNs9Yr0Z324VNlrF+0wMqRXT4St8ck="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.0.0-20200930185726-fdedc70b468f?package-id=c38ca86785f775ea",
+      "type": "library",
+      "name": "golang.org/x/sys",
+      "version": "v0.0.0-20200930185726-fdedc70b468f",
+      "cpe": "cpe:2.3:a:golang:x\\/sys:v0.0.0-20200930185726-fdedc70b468f:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20200930185726-fdedc70b468f",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:+Nyd8tzPX9R7BWHguqsrbFdRx3WQ/1ib8I44HXV5yTA="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/text@v0.3.3?package-id=56e488fcc22e9a9e",
+      "type": "library",
+      "name": "golang.org/x/text",
+      "version": "v0.3.3",
+      "cpe": "cpe:2.3:a:golang:x\\/text:v0.3.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/text@v0.3.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:cokOdA+Jmi5PJGXLlLllQSgYigAEfHXJAERHVMaCc2k="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/time@v0.0.0-20190308202827-9d24e82272b4?package-id=8f5900f52efacef3",
+      "type": "library",
+      "name": "golang.org/x/time",
+      "version": "v0.0.0-20190308202827-9d24e82272b4",
+      "cpe": "cpe:2.3:a:golang:x\\/time:v0.0.0-20190308202827-9d24e82272b4:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/time@v0.0.0-20190308202827-9d24e82272b4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:SvFZT6jyqRaOeXpc5h/JSfZenJ2O330aBsf7JfSUXmQ="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/genproto@v0.0.0-20190819201941-24fa4b261c55?package-id=88173eee85ea1c9c",
+      "type": "library",
+      "name": "google.golang.org/genproto",
+      "version": "v0.0.0-20190819201941-24fa4b261c55",
+      "cpe": "cpe:2.3:a:google:genproto:v0.0.0-20190819201941-24fa4b261c55:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/genproto@v0.0.0-20190819201941-24fa4b261c55",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:gSJIx1SDwno+2ElGhA4+qG2zF97qiUzTM+rQ0klBOcE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/grpc@v1.26.0?package-id=9a85e004695a88e0",
+      "type": "library",
+      "name": "google.golang.org/grpc",
+      "version": "v1.26.0",
+      "cpe": "cpe:2.3:a:google:grpc:v1.26.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/grpc@v1.26.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:2dTRdpdFEEhJYQD8EMLB61nnrzSCTbG38PhqdhvOltg="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/inf.v0@v0.9.1?package-id=bbc94137a720ae52",
+      "type": "library",
+      "name": "gopkg.in/inf.v0",
+      "version": "v0.9.1",
+      "purl": "pkg:golang/gopkg.in/inf.v0@v0.9.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:73M5CoZyi3ZLMOyDlQh031Cx6N9NDJ2Vvfl76EDAgDc="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/square/go-jose.v2@v2.3.1?package-id=4c343a11ef40c354",
+      "type": "library",
+      "name": "gopkg.in/square/go-jose.v2",
+      "version": "v2.3.1",
+      "purl": "pkg:golang/gopkg.in/square/go-jose.v2@v2.3.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:SK5KegNXmKmqE342YYN2qPHEnUYeoMiXXl1poUlI+o4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v2@v2.2.8?package-id=db7fad873da4650a",
+      "type": "library",
+      "name": "gopkg.in/yaml.v2",
+      "version": "v2.2.8",
+      "purl": "pkg:golang/gopkg.in/yaml.v2@v2.2.8",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:obN1ZagJSUGI0Ek/LBmuj4SNLPfIny3KsKFopxRdj10="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/api@v0.18.2?package-id=d856ea1950d1ee59",
+      "type": "library",
+      "name": "k8s.io/api",
+      "version": "v0.18.2",
+      "purl": "pkg:golang/k8s.io/api@v0.18.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:wG5g5ZmSVgm5B+eHMIbI9EGATS2L8Z72rda19RIEgY8="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/apimachinery@v0.18.2?package-id=855809c772a3397f",
+      "type": "library",
+      "name": "k8s.io/apimachinery",
+      "version": "v0.18.2",
+      "purl": "pkg:golang/k8s.io/apimachinery@v0.18.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:44CmtbmkzVDAhCpRVSiP2R5PPrC2RtlIv/MoB8xpdRA="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/apiserver@v0.18.2?package-id=aaa7228a4bce8816",
+      "type": "library",
+      "name": "k8s.io/apiserver",
+      "version": "v0.18.2",
+      "purl": "pkg:golang/k8s.io/apiserver@v0.18.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:fwKxdTWwwYhxvtjo0UUfX+/fsitsNtfErPNegH2x9ic="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/client-go@v0.18.2?package-id=34d1de5f5b7ffc7b",
+      "type": "library",
+      "name": "k8s.io/client-go",
+      "version": "v0.18.2",
+      "purl": "pkg:golang/k8s.io/client-go@v0.18.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:aLB0iaD4nmwh7arT2wIn+lMnAq7OswjaejkQ8p9bBYE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/component-base@v0.18.2?package-id=3d4f87254ad4ba98",
+      "type": "library",
+      "name": "k8s.io/component-base",
+      "version": "v0.18.2",
+      "purl": "pkg:golang/k8s.io/component-base@v0.18.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:SJweNZAGcUvsypLGNPNGeJ9UgPZQ6+bW+gEHe8uyh/Y="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/klog@v1.0.0?package-id=dff0db184b82049f",
+      "type": "library",
+      "name": "k8s.io/klog",
+      "version": "v1.0.0",
+      "purl": "pkg:golang/k8s.io/klog@v1.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:Pt+yjF5aB1xDSVbau4VsWe+dQNzA0qv1LlXdC2dF6Q8="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/utils@v0.0.0-20200324210504-a9aa75ae1b89?package-id=20072dfbc50df8ec",
+      "type": "library",
+      "name": "k8s.io/utils",
+      "version": "v0.0.0-20200324210504-a9aa75ae1b89",
+      "purl": "pkg:golang/k8s.io/utils@v0.0.0-20200324210504-a9aa75ae1b89",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:d4vVOjXm687F1iLSP2q3lyPPuyvTUt3aVoBpi2DqRsU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libc-utils@0.7.2-r3?arch=x86_64&upstream=libc-dev&distro=alpine-3.12.8&package-id=662b1389322bfec7",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "libc-utils",
+      "version": "0.7.2-r3",
+      "description": "Meta package to pull in correct libc",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause AND BSD-3-Clause"
+        }
+      ],
+      "cpe": "cpe:2.3:a:libc-utils:libc-utils:0.7.2-r3:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/libc-utils@0.7.2-r3?arch=x86_64&upstream=libc-dev&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://alpinelinux.org",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libc-utils:libc_utils:0.7.2-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libc_utils:libc-utils:0.7.2-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libc_utils:libc_utils:0.7.2-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libc:libc-utils:0.7.2-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libc:libc_utils:0.7.2-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "60424133be2e79bbfeff3d58147a22886f817ce2"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "4096"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "libc-dev"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q16xP1yRei7gsfFFF2So96SPZpw0c="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "musl-utils"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "1226"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libcrypto1.1@1.1.1l-r0?arch=x86_64&upstream=openssl&distro=alpine-3.12.8&package-id=e111114036d55d6a",
+      "type": "library",
+      "publisher": "Timo Teras <timo.teras@iki.fi>",
+      "name": "libcrypto1.1",
+      "version": "1.1.1l-r0",
+      "description": "Crypto library from openssl",
+      "licenses": [
+        {
+          "license": {
+            "id": "OpenSSL"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1l-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/libcrypto1.1@1.1.1l-r0?arch=x86_64&upstream=openssl&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://www.openssl.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libcrypto1.1:libcrypto:1.1.1l-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libcrypto:libcrypto1.1:1.1.1l-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libcrypto:libcrypto:1.1.1l-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "4d4c2f651ed3eeeb3021ef51951902f800f3fb1a"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "2764800"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "openssl"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "so:libcrypto.so.1.1=1.1"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1mZzZzDVGHYHYXj+feAdeNkj+BTo="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "1209903"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libssl1.1@1.1.1l-r0?arch=x86_64&upstream=openssl&distro=alpine-3.12.8&package-id=08ba1c4f8a140a48",
+      "type": "library",
+      "publisher": "Timo Teras <timo.teras@iki.fi>",
+      "name": "libssl1.1",
+      "version": "1.1.1l-r0",
+      "description": "SSL shared libraries",
+      "licenses": [
+        {
+          "license": {
+            "id": "OpenSSL"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1l-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/libssl1.1@1.1.1l-r0?arch=x86_64&upstream=openssl&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://www.openssl.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libssl1.1:libssl:1.1.1l-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libssl:libssl1.1:1.1.1l-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libssl:libssl:1.1.1l-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "4d4c2f651ed3eeeb3021ef51951902f800f3fb1a"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "540672"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "openssl"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "so:libssl.so.1.1=1.1"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1ls8q/0UxhsoaIsEuenGX7t1ILGg="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "so:libcrypto.so.1.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "212700"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libtls-standalone@2.9.1-r1?arch=x86_64&distro=alpine-3.12.8&package-id=eca703f7f91c0a39",
+      "type": "library",
+      "name": "libtls-standalone",
+      "version": "2.9.1-r1",
+      "description": "libtls extricated from libressl sources",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libtls-standalone:libtls-standalone:2.9.1-r1:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/libtls-standalone@2.9.1-r1?arch=x86_64&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://www.libressl.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libtls-standalone:libtls_standalone:2.9.1-r1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libtls_standalone:libtls-standalone:2.9.1-r1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libtls_standalone:libtls_standalone:2.9.1-r1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libtls:libtls-standalone:2.9.1-r1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libtls:libtls_standalone:2.9.1-r1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "7ebfa23b6119a24ca9b9375bdc55373259192da1"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "110592"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "libtls-standalone"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "so:libtls-standalone.so.1=1.0.0"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q14BzqSsJ9wRYejKCBU++3I2VvzSs="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "ca-certificates-bundle"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:2",
+          "value": "so:libcrypto.so.1.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:3",
+          "value": "so:libssl.so.1.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "33144"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8&package-id=a173ced38d2243df",
+      "type": "library",
+      "publisher": "Timo Teräs <timo.teras@iki.fi>",
+      "name": "musl",
+      "version": "1.1.24-r10",
+      "description": "the musl c library (libc) implementation",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:musl-libc:musl:1.1.24-r10:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://musl.libc.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl_libc:musl:1.1.24-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl:musl:1.1.24-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "908046ad5f96c4c1df5541ff4b0251767e110c85"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "614400"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "musl"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "so:libc.musl-x86_64.so.1=1"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1mGDXWUFVE+6oFGyj8OMl5cZrkkU="
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "377258"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/musl-utils@1.1.24-r10?arch=x86_64&upstream=musl&distro=alpine-3.12.8&package-id=10a112cc37cad5e4",
+      "type": "library",
+      "publisher": "Timo Teräs <timo.teras@iki.fi>",
+      "name": "musl-utils",
+      "version": "1.1.24-r10",
+      "description": "the musl c library (libc) implementation",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:musl-utils:musl-utils:1.1.24-r10:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/musl-utils@1.1.24-r10?arch=x86_64&upstream=musl&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://musl.libc.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl-utils:musl_utils:1.1.24-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl_utils:musl-utils:1.1.24-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl_utils:musl_utils:1.1.24-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl-libc:musl-utils:1.1.24-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl-libc:musl_utils:1.1.24-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl:musl-utils:1.1.24-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl:musl_utils:1.1.24-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "908046ad5f96c4c1df5541ff4b0251767e110c85"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "151552"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "musl"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "cmd:getconf"
+        },
+        {
+          "name": "syft:metadata:provides:1",
+          "value": "cmd:getent"
+        },
+        {
+          "name": "syft:metadata:provides:2",
+          "value": "cmd:iconv"
+        },
+        {
+          "name": "syft:metadata:provides:3",
+          "value": "cmd:ldconfig"
+        },
+        {
+          "name": "syft:metadata:provides:4",
+          "value": "cmd:ldd"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1MFuIRwDYNC3UF1ZCaWGJAIXPy8k="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "scanelf"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "37724"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/scanelf@1.2.6-r0?arch=x86_64&upstream=pax-utils&distro=alpine-3.12.8&package-id=17177b081d3ddc95",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "scanelf",
+      "version": "1.2.6-r0",
+      "description": "Scan ELF binaries for stuff",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:scanelf:scanelf:1.2.6-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/scanelf@1.2.6-r0?arch=x86_64&upstream=pax-utils&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "753fa8d765c7a4edb76f11b1995f84cdcb45bce5"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "94208"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "pax-utils"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "cmd:scanelf"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1jvYavRv99SdiT3M3Kv5gvpi8LXY="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "36446"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/apiserver-network-proxy/konnectivity-client@v0.0.7?package-id=e31cb13c4bf786d4",
+      "type": "library",
+      "name": "sigs.k8s.io/apiserver-network-proxy/konnectivity-client",
+      "version": "v0.0.7",
+      "cpe": "cpe:2.3:a:apiserver-network-proxy:konnectivity-client:v0.0.7:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/sigs.k8s.io/apiserver-network-proxy/konnectivity-client@v0.0.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apiserver-network-proxy:konnectivity_client:v0.0.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apiserver_network_proxy:konnectivity-client:v0.0.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apiserver_network_proxy:konnectivity_client:v0.0.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apiserver-network:konnectivity-client:v0.0.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apiserver-network:konnectivity_client:v0.0.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apiserver_network:konnectivity-client:v0.0.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apiserver_network:konnectivity_client:v0.0.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apiserver:konnectivity-client:v0.0.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apiserver:konnectivity_client:v0.0.7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:uuHDyjllyzRyCIvvn0OBjiRB0SgBZGqHNYAmjR7fO50="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/controller-runtime@v0.6.0?package-id=ccfeb48c791969e1",
+      "type": "library",
+      "name": "sigs.k8s.io/controller-runtime",
+      "version": "v0.6.0",
+      "purl": "pkg:golang/sigs.k8s.io/controller-runtime@v0.6.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:Fzna3DY7c4BIP6KwfSlrfnj20DJ+SeMBK8HSFvOk9NM="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/structured-merge-diff/v3@v3.0.0?package-id=7a5e8e6d75906779",
+      "type": "library",
+      "name": "sigs.k8s.io/structured-merge-diff/v3",
+      "version": "v3.0.0",
+      "cpe": "cpe:2.3:a:structured-merge-diff:v3:v3.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/sigs.k8s.io/structured-merge-diff/v3@v3.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:structured_merge_diff:v3:v3.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:structured-merge:v3:v3.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:structured_merge:v3:v3.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:structured:v3:v3.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:dOmIZBMfhcHS09XZkMyUgkq5trg3/jRyJYFZUiaOp8E="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/yaml@v1.2.0?package-id=be2c5a9358ef4add",
+      "type": "library",
+      "name": "sigs.k8s.io/yaml",
+      "version": "v1.2.0",
+      "purl": "pkg:golang/sigs.k8s.io/yaml@v1.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:96a6d80670cad27e18b2768a53e160b09c8638bf9496ff6e8cab87fb5f6baf3e"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:999680f3da9ea27eb8b504201b3ea0c349c71f6dab06d6d2a34ac4a2ae4bfc87"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:c1d67906ad2036052819a9f1d30ed35718ae6950b761af36df2fdc39c0e91a8a"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/home/authservice/oidc-authservice"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.15.3"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:kr/MCeFWJWTwyaHoR9c8EjH9OumOmoF9YGiZd7lFm/Q="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/arrikto/oidc-authservice"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ssl_client@1.31.1-r20?arch=x86_64&upstream=busybox&distro=alpine-3.12.8&package-id=2fdf47af0469cde7",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "ssl_client",
+      "version": "1.31.1-r20",
+      "description": "EXternal ssl_client for busybox wget",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:ssl-client:ssl-client:1.31.1-r20:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/ssl_client@1.31.1-r20?arch=x86_64&upstream=busybox&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://busybox.net/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ssl-client:ssl_client:1.31.1-r20:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ssl_client:ssl-client:1.31.1-r20:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ssl_client:ssl_client:1.31.1-r20:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ssl:ssl-client:1.31.1-r20:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ssl:ssl_client:1.31.1-r20:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "0d639f13e315e43a11821d963031ed5b49b15a15"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "28672"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "busybox"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "cmd:ssl_client"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1oTNB9nf/H783v3jfqY+7gGwraO0="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "so:libtls-standalone.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "4308"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/zlib@1.2.11-r3?arch=x86_64&distro=alpine-3.12.8&package-id=8e6e3121c0fcda1a",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "zlib",
+      "version": "1.2.11-r3",
+      "description": "A compression/decompression Library",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:zlib:zlib:1.2.11-r3:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/zlib@1.2.11-r3?arch=x86_64&distro=alpine-3.12.8",
+      "externalReferences": [
+        {
+          "url": "https://zlib.net/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:1ab9799c22e6eb108fe17d9eefe2ed2ac52d283ef241894f38f8ac8c23ede7d2"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e6688e911f15729983816cb784a4ae88c7405593c30bc88f6216e24c3363bf26"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "388a4fb3640f8ccbd18e105df3ad741dca4247e1"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "110592"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "zlib"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "so:libz.so.1=1.2.11"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1VG3cOxdfR6zZg7CZOD6SSC3lO6s="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "51197"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "name": "alpine",
+      "version": "3.12.8",
+      "description": "Alpine Linux v3.12",
+      "swid": {
+        "tagId": "alpine",
+        "name": "alpine",
+        "version": "3.12.8"
+      },
+      "externalReferences": [
+        {
+          "url": "https://bugs.alpinelinux.org/",
+          "type": "issue-tracker"
+        },
+        {
+          "url": "https://alpinelinux.org/",
+          "type": "website"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:distro:id",
+          "value": "alpine"
+        },
+        {
+          "name": "syft:distro:prettyName",
+          "value": "Alpine Linux v3.12"
+        },
+        {
+          "name": "syft:distro:versionID",
+          "value": "3.12.8"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:apk/alpine/alpine-baselayout@3.2.0-r7?arch=x86_64&distro=alpine-3.12.8&package-id=42e427ea4d3c37c0",
+      "dependsOn": [
+        "pkg:apk/alpine/busybox@1.31.1-r20?arch=x86_64&distro=alpine-3.12.8&package-id=6cd22e0e328186ab",
+        "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8&package-id=a173ced38d2243df"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/apk-tools@2.10.8-r0?arch=x86_64&distro=alpine-3.12.8&package-id=5374df750b7d0182",
+      "dependsOn": [
+        "pkg:apk/alpine/libcrypto1.1@1.1.1l-r0?arch=x86_64&upstream=openssl&distro=alpine-3.12.8&package-id=e111114036d55d6a",
+        "pkg:apk/alpine/libssl1.1@1.1.1l-r0?arch=x86_64&upstream=openssl&distro=alpine-3.12.8&package-id=08ba1c4f8a140a48",
+        "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8&package-id=a173ced38d2243df",
+        "pkg:apk/alpine/zlib@1.2.11-r3?arch=x86_64&distro=alpine-3.12.8&package-id=8e6e3121c0fcda1a"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/busybox@1.31.1-r20?arch=x86_64&distro=alpine-3.12.8&package-id=6cd22e0e328186ab",
+      "dependsOn": [
+        "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8&package-id=a173ced38d2243df"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/ca-certificates@20191127-r4?arch=x86_64&distro=alpine-3.12.8&package-id=bce24f72d623a7ea",
+      "dependsOn": [
+        "pkg:apk/alpine/busybox@1.31.1-r20?arch=x86_64&distro=alpine-3.12.8&package-id=6cd22e0e328186ab",
+        "pkg:apk/alpine/libcrypto1.1@1.1.1l-r0?arch=x86_64&upstream=openssl&distro=alpine-3.12.8&package-id=e111114036d55d6a",
+        "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8&package-id=a173ced38d2243df"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/libc-utils@0.7.2-r3?arch=x86_64&upstream=libc-dev&distro=alpine-3.12.8&package-id=662b1389322bfec7",
+      "dependsOn": [
+        "pkg:apk/alpine/musl-utils@1.1.24-r10?arch=x86_64&upstream=musl&distro=alpine-3.12.8&package-id=10a112cc37cad5e4"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/libcrypto1.1@1.1.1l-r0?arch=x86_64&upstream=openssl&distro=alpine-3.12.8&package-id=e111114036d55d6a",
+      "dependsOn": [
+        "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8&package-id=a173ced38d2243df"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/libssl1.1@1.1.1l-r0?arch=x86_64&upstream=openssl&distro=alpine-3.12.8&package-id=08ba1c4f8a140a48",
+      "dependsOn": [
+        "pkg:apk/alpine/libcrypto1.1@1.1.1l-r0?arch=x86_64&upstream=openssl&distro=alpine-3.12.8&package-id=e111114036d55d6a",
+        "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8&package-id=a173ced38d2243df"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/libtls-standalone@2.9.1-r1?arch=x86_64&distro=alpine-3.12.8&package-id=eca703f7f91c0a39",
+      "dependsOn": [
+        "pkg:apk/alpine/ca-certificates-bundle@20191127-r4?arch=x86_64&upstream=ca-certificates&distro=alpine-3.12.8&package-id=6f28ec19c12b3de7",
+        "pkg:apk/alpine/libcrypto1.1@1.1.1l-r0?arch=x86_64&upstream=openssl&distro=alpine-3.12.8&package-id=e111114036d55d6a",
+        "pkg:apk/alpine/libssl1.1@1.1.1l-r0?arch=x86_64&upstream=openssl&distro=alpine-3.12.8&package-id=08ba1c4f8a140a48",
+        "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8&package-id=a173ced38d2243df"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/musl-utils@1.1.24-r10?arch=x86_64&upstream=musl&distro=alpine-3.12.8&package-id=10a112cc37cad5e4",
+      "dependsOn": [
+        "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8&package-id=a173ced38d2243df",
+        "pkg:apk/alpine/scanelf@1.2.6-r0?arch=x86_64&upstream=pax-utils&distro=alpine-3.12.8&package-id=17177b081d3ddc95"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/scanelf@1.2.6-r0?arch=x86_64&upstream=pax-utils&distro=alpine-3.12.8&package-id=17177b081d3ddc95",
+      "dependsOn": [
+        "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8&package-id=a173ced38d2243df"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/ssl_client@1.31.1-r20?arch=x86_64&upstream=busybox&distro=alpine-3.12.8&package-id=2fdf47af0469cde7",
+      "dependsOn": [
+        "pkg:apk/alpine/libtls-standalone@2.9.1-r1?arch=x86_64&distro=alpine-3.12.8&package-id=eca703f7f91c0a39",
+        "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8&package-id=a173ced38d2243df"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/zlib@1.2.11-r3?arch=x86_64&distro=alpine-3.12.8&package-id=8e6e3121c0fcda1a",
+      "dependsOn": [
+        "pkg:apk/alpine/musl@1.1.24-r10?arch=x86_64&distro=alpine-3.12.8&package-id=a173ced38d2243df"
+      ]
+    }
+  ]
+}

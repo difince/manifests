@@ -1,0 +1,1310 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:1ea543ad-a29f-4a3e-a1fa-82954ddf93d3",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-10-02T12:22:12+03:00",
+    "tools": [
+      {
+        "vendor": "anchore",
+        "name": "syft",
+        "version": "0.90.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "14f4d3d9e9a5538a",
+      "type": "container",
+      "name": "gcr.io/cloudsql-docker/gce-proxy",
+      "version": "1.25.0"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:deb/debian/base-files@10.3+deb10u10?arch=amd64&distro=debian-10&package-id=b33448920f6bc8aa",
+      "type": "library",
+      "publisher": "Santiago Vila <sanvila@debian.org>",
+      "name": "base-files",
+      "version": "10.3+deb10u10",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:base-files:base-files:10.3\\+deb10u10:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/base-files@10.3+deb10u10?arch=amd64&distro=debian-10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base-files:base_files:10.3\\+deb10u10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base_files:base-files:10.3\\+deb10u10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base_files:base_files:10.3\\+deb10u10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base:base-files:10.3\\+deb10u10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base:base_files:10.3\\+deb10u10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:16679402dc206c982b5552ab8de7d898547100e5468be29d4f67d393c0eadfdb"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/base-files/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:16679402dc206c982b5552ab8de7d898547100e5468be29d4f67d393c0eadfdb"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/base"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "340"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/bazil.org/fuse@v0.0.0-20180421153158-65cc252bf669?package-id=43a3fd161d81c28e",
+      "type": "library",
+      "name": "bazil.org/fuse",
+      "version": "v0.0.0-20180421153158-65cc252bf669",
+      "purl": "pkg:golang/bazil.org/fuse@v0.0.0-20180421153158-65cc252bf669",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:FNCRpXiquG1aoyqcIWVFmpTSKVcx2bQD38uZZeGtdlw="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/cloud.google.com/go@v0.94.1?package-id=d3bf62f9e4614ee9",
+      "type": "library",
+      "name": "cloud.google.com/go",
+      "version": "v0.94.1",
+      "purl": "pkg:golang/cloud.google.com/go@v0.94.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:DwuSvDZ1pTYGbXo8yOJevCTr3BoBlE+OVkHAKiYQUXc="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/googlecloudplatform/cloudsql-proxy@(devel)?package-id=966ed2b9608fe600",
+      "type": "library",
+      "name": "github.com/GoogleCloudPlatform/cloudsql-proxy",
+      "version": "(devel)",
+      "cpe": "cpe:2.3:a:GoogleCloudPlatform:cloudsql-proxy:\\(devel\\):*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/GoogleCloudPlatform/cloudsql-proxy@(devel)",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:GoogleCloudPlatform:cloudsql_proxy:\\(devel\\):*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/coreos/go-systemd/v22@v22.3.2?package-id=7b2095a72e58a270",
+      "type": "library",
+      "name": "github.com/coreos/go-systemd/v22",
+      "version": "v22.3.2",
+      "cpe": "cpe:2.3:a:coreos:go-systemd\\/v22:v22.3.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/coreos/go-systemd/v22@v22.3.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:coreos:go_systemd\\/v22:v22.3.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:D9/bQk5vlXQFZ6Kwuu6zaiXJ9oTPe68++AzAJc1DzSI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/groupcache@v0.0.0-20200121045136-8c9f03a8e57e?package-id=dc9e314500770c49",
+      "type": "library",
+      "name": "github.com/golang/groupcache",
+      "version": "v0.0.0-20200121045136-8c9f03a8e57e",
+      "cpe": "cpe:2.3:a:golang:groupcache:v0.0.0-20200121045136-8c9f03a8e57e:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/golang/groupcache@v0.0.0-20200121045136-8c9f03a8e57e",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:1r7pUrabqp18hOBcwBwiTsbnFeTZHV9eER/QT5JVZxY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/protobuf@v1.5.2?package-id=1e2069f06e97503b",
+      "type": "library",
+      "name": "github.com/golang/protobuf",
+      "version": "v1.5.2",
+      "cpe": "cpe:2.3:a:golang:protobuf:v1.5.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/golang/protobuf@v1.5.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:ROPKBNFfQgOUMifHyP+KYbvpjbdoFNs+aK7DXlji0Tw="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/googleapis/gax-go/v2@v2.1.0?package-id=0a02c48c1557b83a",
+      "type": "library",
+      "name": "github.com/googleapis/gax-go/v2",
+      "version": "v2.1.0",
+      "cpe": "cpe:2.3:a:googleapis:gax-go\\/v2:v2.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/googleapis/gax-go/v2@v2.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:googleapis:gax_go\\/v2:v2.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:6DWmvNpomjL1+3liNSZbVns3zsYzzCjm6pRBO1tLeso="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.opencensus.io@v0.23.0?package-id=2719bd756e2e9b7b",
+      "type": "library",
+      "name": "go.opencensus.io",
+      "version": "v0.23.0",
+      "purl": "pkg:golang/go.opencensus.io@v0.23.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:gqCw0LfLxScz8irSi8exQc7fyQ0fKQU/qnC/X8+V/1M="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/atomic@v1.7.0?package-id=889b43c8d211ff17",
+      "type": "library",
+      "name": "go.uber.org/atomic",
+      "version": "v1.7.0",
+      "purl": "pkg:golang/go.uber.org/atomic@v1.7.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:ADUqmZGgLDDfbSL9ZmPxKTybcoEYHgpYfELNoN+7hsw="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/multierr@v1.6.0?package-id=f91112dc8a85e1d2",
+      "type": "library",
+      "name": "go.uber.org/multierr",
+      "version": "v1.6.0",
+      "purl": "pkg:golang/go.uber.org/multierr@v1.6.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:y6IPFStTAIT5Ytl7/XYmHvzXQ7S3g/IeZW9hyZ5thw4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/zap@v1.19.0?package-id=a8687f6b8b7409e2",
+      "type": "library",
+      "name": "go.uber.org/zap",
+      "version": "v1.19.0",
+      "purl": "pkg:golang/go.uber.org/zap@v1.19.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:mZQZefskPPCMIBCSEH0v2/iUqqLrYtaeqwD6FUGUnFE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/net@v0.0.0-20210903162142-ad29c8ab022f?package-id=adf70523c744434d",
+      "type": "library",
+      "name": "golang.org/x/net",
+      "version": "v0.0.0-20210903162142-ad29c8ab022f",
+      "cpe": "cpe:2.3:a:golang:x\\/net:v0.0.0-20210903162142-ad29c8ab022f:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/net@v0.0.0-20210903162142-ad29c8ab022f",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:w6wWR0H+nyVpbSAQbzVEIACVyr/h8l/BEkY6Sokc7Eg="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/oauth2@v0.0.0-20210819190943-2bc19b11175f?package-id=f022a3cf8a032f0e",
+      "type": "library",
+      "name": "golang.org/x/oauth2",
+      "version": "v0.0.0-20210819190943-2bc19b11175f",
+      "cpe": "cpe:2.3:a:golang:x\\/oauth2:v0.0.0-20210819190943-2bc19b11175f:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/oauth2@v0.0.0-20210819190943-2bc19b11175f",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:Qmd2pbz05z7z6lm0DrgQVVPuBm92jqujBKMHMOlOQEw="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.0.0-20210906170528-6f6e22806c34?package-id=4b714bec06bb4289",
+      "type": "library",
+      "name": "golang.org/x/sys",
+      "version": "v0.0.0-20210906170528-6f6e22806c34",
+      "cpe": "cpe:2.3:a:golang:x\\/sys:v0.0.0-20210906170528-6f6e22806c34:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20210906170528-6f6e22806c34",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:GkvMjFtXUmahfDtashnc1mnrCtuBVcwse5QV2lUk/tI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/text@v0.3.6?package-id=1caf1418aaa05339",
+      "type": "library",
+      "name": "golang.org/x/text",
+      "version": "v0.3.6",
+      "cpe": "cpe:2.3:a:golang:x\\/text:v0.3.6:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/text@v0.3.6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:aRYxNxv6iGQlyVaZmk6ZgYEDa+Jg18DxebPSrd6bg1M="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/time@v0.0.0-20210723032227-1f47c861a9ac?package-id=8f36d17da292a6f4",
+      "type": "library",
+      "name": "golang.org/x/time",
+      "version": "v0.0.0-20210723032227-1f47c861a9ac",
+      "cpe": "cpe:2.3:a:golang:x\\/time:v0.0.0-20210723032227-1f47c861a9ac:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/time@v0.0.0-20210723032227-1f47c861a9ac",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:7zkz7BUtwNFFqcowJ+RIgu2MaV/MapERkDIy+mwPyjs="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/api@v0.56.0?package-id=b4664ec1bb11843c",
+      "type": "library",
+      "name": "google.golang.org/api",
+      "version": "v0.56.0",
+      "cpe": "cpe:2.3:a:google:api:v0.56.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/api@v0.56.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:08F9XVYTLOGeSQb3xI9C0gXMuQanhdGed0cWFhDozbI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/genproto@v0.0.0-20210831024726-fe130286e0e2?package-id=9d0332c45799ba02",
+      "type": "library",
+      "name": "google.golang.org/genproto",
+      "version": "v0.0.0-20210831024726-fe130286e0e2",
+      "cpe": "cpe:2.3:a:google:genproto:v0.0.0-20210831024726-fe130286e0e2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/genproto@v0.0.0-20210831024726-fe130286e0e2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:NHN4wOCScVzKhPenJ2dt+BTs3X/XkBVI/Rh4iDt55T8="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/grpc@v1.40.0?package-id=058020ba18073769",
+      "type": "library",
+      "name": "google.golang.org/grpc",
+      "version": "v1.40.0",
+      "cpe": "cpe:2.3:a:google:grpc:v1.40.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/grpc@v1.40.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:AGJ0Ih4mHjSeibYkFGh1dD9KJ/eOtZ93I6hoHhukQ5Q="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/protobuf@v1.27.1?package-id=4509de72fd35cfee",
+      "type": "library",
+      "name": "google.golang.org/protobuf",
+      "version": "v1.27.1",
+      "cpe": "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f1b4b55d4e3e7b12c841cc4c992e39111e84f0707850cd0c4d5ea2885bad5127"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/cloud_sql_proxy"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17"
+        },
+        {
+          "name": "syft:metadata:goCryptoSettings:0",
+          "value": "standard-crypto"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:SnqbnDw1V7RiZcXPx5MEeqPv2s79L9i7BJUlG/+RurQ="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/GoogleCloudPlatform/cloudsql-proxy"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/netbase@5.6?arch=all&distro=debian-10&package-id=06725065d0b51dfa",
+      "type": "library",
+      "publisher": "Marco d'Itri <md@linux.it>",
+      "name": "netbase",
+      "version": "5.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:netbase:netbase:5.6:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/netbase@5.6?arch=all&distro=debian-10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:16679402dc206c982b5552ab8de7d898547100e5468be29d4f67d393c0eadfdb"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/netbase/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:16679402dc206c982b5552ab8de7d898547100e5468be29d4f67d393c0eadfdb"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/netbase"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "44"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tzdata@2021a-0+deb10u1?arch=all&distro=debian-10&package-id=9e5b2198bbbd7fb0",
+      "type": "library",
+      "publisher": "GNU Libc Maintainers <debian-glibc@lists.debian.org>",
+      "name": "tzdata",
+      "version": "2021a-0+deb10u1",
+      "cpe": "cpe:2.3:a:tzdata:tzdata:2021a-0\\+deb10u1:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/tzdata@2021a-0+deb10u1?arch=all&distro=debian-10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:16679402dc206c982b5552ab8de7d898547100e5468be29d4f67d393c0eadfdb"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/tzdata/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:16679402dc206c982b5552ab8de7d898547100e5468be29d4f67d393c0eadfdb"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/tzdata"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "3040"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "name": "debian",
+      "version": "10",
+      "description": "Distroless",
+      "swid": {
+        "tagId": "debian",
+        "name": "debian",
+        "version": "10"
+      },
+      "externalReferences": [
+        {
+          "url": "https://github.com/GoogleContainerTools/distroless/issues/new",
+          "type": "issue-tracker"
+        },
+        {
+          "url": "https://github.com/GoogleContainerTools/distroless",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/GoogleContainerTools/distroless/blob/master/README.md",
+          "comment": "support",
+          "type": "other"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:distro:id",
+          "value": "debian"
+        },
+        {
+          "name": "syft:distro:prettyName",
+          "value": "Distroless"
+        },
+        {
+          "name": "syft:distro:versionID",
+          "value": "10"
+        }
+      ]
+    }
+  ]
+}

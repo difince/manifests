@@ -1,0 +1,10 @@
+docker.io/kubeflownotebookswg/centraldashboard:v1.8.0-rc.0
+docker.io/kubeflownotebookswg/jupyter-web-app:v1.8.0-rc.0
+docker.io/kubeflownotebookswg/kfam:v1.8.0-rc.0
+docker.io/kubeflownotebookswg/notebook-controller:v1.8.0-rc.0
+docker.io/kubeflownotebookswg/poddefaults-webhook:v1.8.0-rc.0
+docker.io/kubeflownotebookswg/profile-controller:v1.8.0-rc.0
+docker.io/kubeflownotebookswg/tensorboard-controller:v1.8.0-rc.0
+docker.io/kubeflownotebookswg/tensorboards-web-app:v1.8.0-rc.0
+docker.io/kubeflownotebookswg/volumes-web-app:v1.8.0-rc.0
+gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0

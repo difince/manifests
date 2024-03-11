@@ -1,0 +1,3680 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:4719cde9-f77c-4651-b557-8a9077416d16",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-03-11T14:47:47+02:00",
+    "tools": [
+      {
+        "vendor": "anchore",
+        "name": "syft",
+        "version": "0.90.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "89fd9a0b966fe098",
+      "type": "container",
+      "name": "quay.io/jetstack/cert-manager-cainjector",
+      "version": "v1.12.2"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:golang/../..@(devel)?package-id=a1feaba023e9968a",
+      "type": "library",
+      "name": "../../",
+      "version": "(devel)",
+      "purl": "pkg:golang/../..@(devel)",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/base-files@11.1+deb11u7?arch=amd64&distro=debian-11&package-id=d459a17da976b16d",
+      "type": "library",
+      "publisher": "Santiago Vila <sanvila@debian.org>",
+      "name": "base-files",
+      "version": "11.1+deb11u7",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:base-files:base-files:11.1\\+deb11u7:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/base-files@11.1+deb11u7?arch=amd64&distro=debian-11",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base-files:base_files:11.1\\+deb11u7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base_files:base-files:11.1\\+deb11u7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base_files:base_files:11.1\\+deb11u7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base:base-files:11.1\\+deb11u7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base:base_files:11.1\\+deb11u7:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:e023e0e48e6e29e90e519f4dd356d058ff2bffbd16e28b802f3b8f93aa4ccb17"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/base-files/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:e023e0e48e6e29e90e519f4dd356d058ff2bffbd16e28b802f3b8f93aa4ccb17"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/base-files"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:e023e0e48e6e29e90e519f4dd356d058ff2bffbd16e28b802f3b8f93aa4ccb17"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/var/lib/dpkg/status.d/base-files.md5sums"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "341"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/command-line-arguments@(devel)?package-id=a00e28481efc9acc",
+      "type": "library",
+      "name": "command-line-arguments",
+      "version": "(devel)",
+      "purl": "pkg:golang/command-line-arguments@(devel)",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:-buildmode",
+          "value": "exe"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:-compiler",
+          "value": "gc"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:-trimpath",
+          "value": "true"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:CGO_ENABLED",
+          "value": "0"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOAMD64",
+          "value": "v1"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOARCH",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOOS",
+          "value": "linux"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/beorn7/perks@v1.0.1?package-id=c7f237fbfc438199",
+      "type": "library",
+      "name": "github.com/beorn7/perks",
+      "version": "v1.0.1",
+      "cpe": "cpe:2.3:a:beorn7:perks:v1.0.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/beorn7/perks@v1.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/blang/semver/v4@v4.0.0?package-id=0850fcd9aa9782e7",
+      "type": "library",
+      "name": "github.com/blang/semver/v4",
+      "version": "v4.0.0",
+      "cpe": "cpe:2.3:a:blang:semver\\/v4:v4.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/blang/semver/v4@v4.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:1PFHFE6yCCTv8C1TeyNNarDzntLi7wMI5i/pzqYIsAM="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/cert-manager/cert-manager/cainjector-binary@(devel)?package-id=1ef3e857b62c6584",
+      "type": "library",
+      "name": "github.com/cert-manager/cert-manager/cainjector-binary",
+      "version": "(devel)",
+      "cpe": "cpe:2.3:a:cert-manager:cert-manager\\/cainjector-binary:\\(devel\\):*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/cert-manager/cert-manager/cainjector-binary@(devel)",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cert-manager:cert_manager\\/cainjector_binary:\\(devel\\):*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cert_manager:cert-manager\\/cainjector-binary:\\(devel\\):*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cert_manager:cert_manager\\/cainjector_binary:\\(devel\\):*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cert:cert-manager\\/cainjector-binary:\\(devel\\):*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cert:cert_manager\\/cainjector_binary:\\(devel\\):*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/cespare/xxhash/v2@v2.2.0?package-id=2402819dfb964dfb",
+      "type": "library",
+      "name": "github.com/cespare/xxhash/v2",
+      "version": "v2.2.0",
+      "cpe": "cpe:2.3:a:cespare:xxhash\\/v2:v2.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/cespare/xxhash/v2@v2.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:DC2CZ1Ep5Y4k3ZQ899DldepgrayRUGE6BBZ/cd9Cj44="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/davecgh/go-spew@v1.1.1?package-id=f03e6505dde20485",
+      "type": "library",
+      "name": "github.com/davecgh/go-spew",
+      "version": "v1.1.1",
+      "cpe": "cpe:2.3:a:davecgh:go-spew:v1.1.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:davecgh:go_spew:v1.1.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/emicklei/go-restful/v3@v3.9.0?package-id=9b4faf7125acdff2",
+      "type": "library",
+      "name": "github.com/emicklei/go-restful/v3",
+      "version": "v3.9.0",
+      "cpe": "cpe:2.3:a:emicklei:go-restful\\/v3:v3.9.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/emicklei/go-restful/v3@v3.9.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:emicklei:go_restful\\/v3:v3.9.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:XwGDlfxEnQZzuopoqxwSEllNcCOM9DhhFyhFIIGKwxE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/evanphx/json-patch/v5@v5.6.0?package-id=50ab89be87fc5fd2",
+      "type": "library",
+      "name": "github.com/evanphx/json-patch/v5",
+      "version": "v5.6.0",
+      "cpe": "cpe:2.3:a:evanphx:json-patch\\/v5:v5.6.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/evanphx/json-patch/v5@v5.6.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:evanphx:json_patch\\/v5:v5.6.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:b91NhWfaz02IuVxO9faSllyAtNXHMPkC5J8sJCLunww="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/fsnotify/fsnotify@v1.6.0?package-id=d29b358b48b5fe54",
+      "type": "library",
+      "name": "github.com/fsnotify/fsnotify",
+      "version": "v1.6.0",
+      "cpe": "cpe:2.3:a:fsnotify:fsnotify:v1.6.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/fsnotify/fsnotify@v1.6.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:n+5WquG0fcWoWp6xPWfHdbskMCQaFnG6PfBrh1Ky4HY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-logr/logr@v1.2.4?package-id=a9c76fd3b2e4dd15",
+      "type": "library",
+      "name": "github.com/go-logr/logr",
+      "version": "v1.2.4",
+      "cpe": "cpe:2.3:a:go-logr:logr:v1.2.4:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-logr/logr@v1.2.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_logr:logr:v1.2.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:logr:v1.2.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:g01GSCwiDw2xSZfjJ2/T9M+S6pFdcNtFYsp+Y43HYDQ="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-logr/zapr@v1.2.4?package-id=d78c36bc2903ac98",
+      "type": "library",
+      "name": "github.com/go-logr/zapr",
+      "version": "v1.2.4",
+      "cpe": "cpe:2.3:a:go-logr:zapr:v1.2.4:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-logr/zapr@v1.2.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_logr:zapr:v1.2.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:zapr:v1.2.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:QHVo+6stLbfJmYGkQ7uGHUCu5hnAFAj6mDe6Ea0SeOo="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-openapi/jsonpointer@v0.19.6?package-id=c5981e65f1081c1b",
+      "type": "library",
+      "name": "github.com/go-openapi/jsonpointer",
+      "version": "v0.19.6",
+      "cpe": "cpe:2.3:a:go-openapi:jsonpointer:v0.19.6:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-openapi/jsonpointer@v0.19.6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_openapi:jsonpointer:v0.19.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:jsonpointer:v0.19.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:eCs3fxoIi3Wh6vtgmLTOjdhSpiqphQ+DaPn38N2ZdrE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-openapi/jsonreference@v0.20.1?package-id=c46afd6949f2df03",
+      "type": "library",
+      "name": "github.com/go-openapi/jsonreference",
+      "version": "v0.20.1",
+      "cpe": "cpe:2.3:a:go-openapi:jsonreference:v0.20.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-openapi/jsonreference@v0.20.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_openapi:jsonreference:v0.20.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:jsonreference:v0.20.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:FBLnyygC4/IZZr893oiomc9XaghoveYTrLC1F86HID8="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-openapi/swag@v0.22.3?package-id=8007cc886a2c07bb",
+      "type": "library",
+      "name": "github.com/go-openapi/swag",
+      "version": "v0.22.3",
+      "cpe": "cpe:2.3:a:go-openapi:swag:v0.22.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-openapi/swag@v0.22.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_openapi:swag:v0.22.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:swag:v0.22.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:yMBqmnQ0gyZvEb/+KzuWZOXgllrXT4SADYbvDaXHv/g="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gogo/protobuf@v1.3.2?package-id=4dff7b1246ac4582",
+      "type": "library",
+      "name": "github.com/gogo/protobuf",
+      "version": "v1.3.2",
+      "cpe": "cpe:2.3:a:gogo:protobuf:v1.3.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gogo/protobuf@v1.3.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:Ov1cvc58UF3b5XjBnZv7+opcTcQFZebYjWzi34vdm4Q="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da?package-id=58e1a68d8400b979",
+      "type": "library",
+      "name": "github.com/golang/groupcache",
+      "version": "v0.0.0-20210331224755-41bb18bfe9da",
+      "cpe": "cpe:2.3:a:golang:groupcache:v0.0.0-20210331224755-41bb18bfe9da:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:oI5xCqsCo564l8iNU+DwB5epxmsaqB+rhGL0m5jtYqE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/protobuf@v1.5.3?package-id=5c12c6ce8dd0aa31",
+      "type": "library",
+      "name": "github.com/golang/protobuf",
+      "version": "v1.5.3",
+      "cpe": "cpe:2.3:a:golang:protobuf:v1.5.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/golang/protobuf@v1.5.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:KhyjKVUg7Usr/dYsdSqoFveMYd5ko72D+zANwlG1mmg="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/gnostic@v0.6.9?package-id=96206d6b615a2c84",
+      "type": "library",
+      "name": "github.com/google/gnostic",
+      "version": "v0.6.9",
+      "cpe": "cpe:2.3:a:google:gnostic:v0.6.9:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/google/gnostic@v0.6.9",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:ZK/5VhkoX835RikCHpSUJV9a+S3e1zLh59YnyWeBW+0="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/go-cmp@v0.5.9?package-id=02daf6785e6b335e",
+      "type": "library",
+      "name": "github.com/google/go-cmp",
+      "version": "v0.5.9",
+      "cpe": "cpe:2.3:a:google:go-cmp:v0.5.9:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/google/go-cmp@v0.5.9",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:google:go_cmp:v0.5.9:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:O2Tfq5qg4qc4AmwVlvv0oLiVAGB7enBSJ2x2DqQFi38="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/gofuzz@v1.2.0?package-id=2704353d49471d90",
+      "type": "library",
+      "name": "github.com/google/gofuzz",
+      "version": "v1.2.0",
+      "cpe": "cpe:2.3:a:google:gofuzz:v1.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/google/gofuzz@v1.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:xRy4A+RhZaiKjJ1bPfwQ8sedCA+YS2YcCHW6ec7JMi0="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/uuid@v1.3.0?package-id=c0696d56d94a9728",
+      "type": "library",
+      "name": "github.com/google/uuid",
+      "version": "v1.3.0",
+      "cpe": "cpe:2.3:a:google:uuid:v1.3.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/google/uuid@v1.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/imdario/mergo@v0.3.12?package-id=178f8198285baf59",
+      "type": "library",
+      "name": "github.com/imdario/mergo",
+      "version": "v0.3.12",
+      "cpe": "cpe:2.3:a:imdario:mergo:v0.3.12:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/imdario/mergo@v0.3.12",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:b6R2BslTbIEToALKP7LxUvijTsNI9TAe80pLWN2g/HU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/josharian/intern@v1.0.0?package-id=1257524199facfe7",
+      "type": "library",
+      "name": "github.com/josharian/intern",
+      "version": "v1.0.0",
+      "cpe": "cpe:2.3:a:josharian:intern:v1.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/josharian/intern@v1.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:vlS4z54oSdjm0bgjRigI+G1HpF+tI+9rE5LLzOg8HmY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/json-iterator/go@v1.1.12?package-id=80af559932d96b25",
+      "type": "library",
+      "name": "github.com/json-iterator/go",
+      "version": "v1.1.12",
+      "cpe": "cpe:2.3:a:json-iterator:go:v1.1.12:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/json-iterator/go@v1.1.12",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:json_iterator:go:v1.1.12:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:json:go:v1.1.12:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:PV8peI4a0ysnczrg+LtxykD8LfKY9ML6u2jnxaEnrnM="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/mailru/easyjson@v0.7.7?package-id=5debbcdbc5615d99",
+      "type": "library",
+      "name": "github.com/mailru/easyjson",
+      "version": "v0.7.7",
+      "cpe": "cpe:2.3:a:mailru:easyjson:v0.7.7:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/mailru/easyjson@v0.7.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:UGYAvKxe3sBsEDzO8ZeWOSlIQfWFlxbzLZe7hwFURr0="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.4?package-id=0da4a850525ff00d",
+      "type": "library",
+      "name": "github.com/matttproud/golang_protobuf_extensions",
+      "version": "v1.0.4",
+      "cpe": "cpe:2.3:a:matttproud:golang-protobuf-extensions:v1.0.4:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:matttproud:golang_protobuf_extensions:v1.0.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:mmDVorXM7PCGKw94cs5zkfA9PSy5pEvNWRP0ET0TIVo="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd?package-id=5b52bc45bdb81fd4",
+      "type": "library",
+      "name": "github.com/modern-go/concurrent",
+      "version": "v0.0.0-20180306012644-bacd9c7ef1dd",
+      "cpe": "cpe:2.3:a:modern-go:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern_go:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:TRLaZ9cD/w8PVh93nsPXa1VrQ6jlwL5oN8l14QlcNfg="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/modern-go/reflect2@v1.0.2?package-id=397082d400409dc0",
+      "type": "library",
+      "name": "github.com/modern-go/reflect2",
+      "version": "v1.0.2",
+      "cpe": "cpe:2.3:a:modern-go:reflect2:v1.0.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/modern-go/reflect2@v1.0.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern_go:reflect2:v1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern:reflect2:v1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:xBagoLtFs94CBntxluKeaWgTMpvLxC4ur3nMaC9Gz0M="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/munnerz/goautoneg@v0.0.0-20191010083416-a7dc8b61c822?package-id=5288f2a22b836098",
+      "type": "library",
+      "name": "github.com/munnerz/goautoneg",
+      "version": "v0.0.0-20191010083416-a7dc8b61c822",
+      "cpe": "cpe:2.3:a:munnerz:goautoneg:v0.0.0-20191010083416-a7dc8b61c822:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/munnerz/goautoneg@v0.0.0-20191010083416-a7dc8b61c822",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:C3w9PqII01/Oq1c1nUAm88MOHcQC9l5mIlSMApZMrHA="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/pkg/errors@v0.9.1?package-id=ff0d918f04fa9591",
+      "type": "library",
+      "name": "github.com/pkg/errors",
+      "version": "v0.9.1",
+      "cpe": "cpe:2.3:a:pkg:errors:v0.9.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/pkg/errors@v0.9.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/client_golang@v1.15.1?package-id=bb7b7fd8b36724cf",
+      "type": "library",
+      "name": "github.com/prometheus/client_golang",
+      "version": "v1.15.1",
+      "cpe": "cpe:2.3:a:prometheus:client-golang:v1.15.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/client_golang@v1.15.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:prometheus:client_golang:v1.15.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:8tXpTmJbyH5lydzFPoxSIJ0J46jdh3tylbvM1xCv0LI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/client_model@v0.4.0?package-id=0e24c6212bbf928e",
+      "type": "library",
+      "name": "github.com/prometheus/client_model",
+      "version": "v0.4.0",
+      "cpe": "cpe:2.3:a:prometheus:client-model:v0.4.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/client_model@v0.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:prometheus:client_model:v0.4.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:5lQXD3cAg1OXBf4Wq03gTrXHeaV0TQvGfUooCfx1yqY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/common@v0.42.0?package-id=19f88f1923195d25",
+      "type": "library",
+      "name": "github.com/prometheus/common",
+      "version": "v0.42.0",
+      "cpe": "cpe:2.3:a:prometheus:common:v0.42.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/common@v0.42.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:EKsfXEYo4JpWMHH5cg+KOUWeuJSov1Id8zGR8eeI1YM="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/procfs@v0.9.0?package-id=1ffa93bf4cea69af",
+      "type": "library",
+      "name": "github.com/prometheus/procfs",
+      "version": "v0.9.0",
+      "cpe": "cpe:2.3:a:prometheus:procfs:v0.9.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/procfs@v0.9.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:wzCHvIvM5SxWqYvwgVL7yJY8Lz3PKn49KQtpgMYJfhI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/spf13/cobra@v1.7.0?package-id=bbe1f306748d9043",
+      "type": "library",
+      "name": "github.com/spf13/cobra",
+      "version": "v1.7.0",
+      "cpe": "cpe:2.3:a:spf13:cobra:v1.7.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/spf13/cobra@v1.7.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:hyqWnYt1ZQShIddO5kBpj3vu05/++x6tJ6dg8EC572I="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/spf13/pflag@v1.0.5?package-id=9e80b1be10fb255f",
+      "type": "library",
+      "name": "github.com/spf13/pflag",
+      "version": "v1.0.5",
+      "cpe": "cpe:2.3:a:spf13:pflag:v1.0.5:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/spf13/pflag@v1.0.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/atomic@v1.9.0?package-id=67ada52ccbc59c93",
+      "type": "library",
+      "name": "go.uber.org/atomic",
+      "version": "v1.9.0",
+      "purl": "pkg:golang/go.uber.org/atomic@v1.9.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:ECmE8Bn/WFTYwEW/bpKD3M8VtR/zQVbavAoalC1PYyE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/multierr@v1.6.0?package-id=69766287ebc340ae",
+      "type": "library",
+      "name": "go.uber.org/multierr",
+      "version": "v1.6.0",
+      "purl": "pkg:golang/go.uber.org/multierr@v1.6.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:y6IPFStTAIT5Ytl7/XYmHvzXQ7S3g/IeZW9hyZ5thw4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/zap@v1.24.0?package-id=66dac917acb0c87f",
+      "type": "library",
+      "name": "go.uber.org/zap",
+      "version": "v1.24.0",
+      "purl": "pkg:golang/go.uber.org/zap@v1.24.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:FiJd5l1UOLj0wCgbSE0rwwXHzEdAZS6hiiSnxJN/D60="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/net@v0.10.0?package-id=4fc128b0c0022fc0",
+      "type": "library",
+      "name": "golang.org/x/net",
+      "version": "v0.10.0",
+      "cpe": "cpe:2.3:a:golang:x\\/net:v0.10.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/net@v0.10.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:X2//UzNDwYmtCLn7To6G58Wr6f5ahEAQgKNzv9Y951M="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/oauth2@v0.5.0?package-id=2908d9bc6e1ad43a",
+      "type": "library",
+      "name": "golang.org/x/oauth2",
+      "version": "v0.5.0",
+      "cpe": "cpe:2.3:a:golang:x\\/oauth2:v0.5.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/oauth2@v0.5.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:HuArIo48skDwlrvM3sEdHXElYslAMsf3KwRkkW4MC4s="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sync@v0.2.0?package-id=0d0ffe9030a7b313",
+      "type": "library",
+      "name": "golang.org/x/sync",
+      "version": "v0.2.0",
+      "cpe": "cpe:2.3:a:golang:x\\/sync:v0.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/sync@v0.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:PUR+T4wwASmuSTYdKjYHI5TD22Wy5ogLU5qZCOLxBrI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.8.0?package-id=9fa3817d90a8e169",
+      "type": "library",
+      "name": "golang.org/x/sys",
+      "version": "v0.8.0",
+      "cpe": "cpe:2.3:a:golang:x\\/sys:v0.8.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/sys@v0.8.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:EBmGv8NaZBZTWvrbjNoL6HVt+IVy3QDQpJs7VRIw3tU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/term@v0.8.0?package-id=cfc2e49846164a80",
+      "type": "library",
+      "name": "golang.org/x/term",
+      "version": "v0.8.0",
+      "cpe": "cpe:2.3:a:golang:x\\/term:v0.8.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/term@v0.8.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:n5xxQn2i3PC0yLAbjTpNT85q/Kgzcr2gIoX9OrJUols="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/text@v0.9.0?package-id=27afdf2ab1c56c8a",
+      "type": "library",
+      "name": "golang.org/x/text",
+      "version": "v0.9.0",
+      "cpe": "cpe:2.3:a:golang:x\\/text:v0.9.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/text@v0.9.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:2sjJmO8cDvYveuX97RDLsxlyUxLl+GHoLxBiRdHllBE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/time@v0.3.0?package-id=f91490dac71b2967",
+      "type": "library",
+      "name": "golang.org/x/time",
+      "version": "v0.3.0",
+      "cpe": "cpe:2.3:a:golang:x\\/time:v0.3.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/time@v0.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:rg5rLMjNzMS1RkNLzCG38eapWhnYLFYXDXj2gOlr8j4="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gomodules.xyz/jsonpatch/v2@v2.3.0?package-id=1190adece0583111",
+      "type": "library",
+      "name": "gomodules.xyz/jsonpatch/v2",
+      "version": "v2.3.0",
+      "cpe": "cpe:2.3:a:jsonpatch:v2:v2.3.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/gomodules.xyz/jsonpatch/v2@v2.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:8NFhfS6gzxNqjLIYnZxg319wZ5Qjnx4m/CcX+Klzazc="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/protobuf@v1.30.0?package-id=817cf5c5527d72b4",
+      "type": "library",
+      "name": "google.golang.org/protobuf",
+      "version": "v1.30.0",
+      "cpe": "cpe:2.3:a:google:protobuf:v1.30.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/protobuf@v1.30.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:kPPoIgf3TsEvrm0PFe15JQ+570QVxYzEvvHqChK+cng="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/inf.v0@v0.9.1?package-id=1941f7f0c6ae3da5",
+      "type": "library",
+      "name": "gopkg.in/inf.v0",
+      "version": "v0.9.1",
+      "purl": "pkg:golang/gopkg.in/inf.v0@v0.9.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:73M5CoZyi3ZLMOyDlQh031Cx6N9NDJ2Vvfl76EDAgDc="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v2@v2.4.0?package-id=68a3bb2accd86ee9",
+      "type": "library",
+      "name": "gopkg.in/yaml.v2",
+      "version": "v2.4.0",
+      "purl": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:D8xgwECY7CYvx+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v3@v3.0.1?package-id=721e00b4898f1e96",
+      "type": "library",
+      "name": "gopkg.in/yaml.v3",
+      "version": "v3.0.1",
+      "purl": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/api@v0.27.2?package-id=4f6154941373da90",
+      "type": "library",
+      "name": "k8s.io/api",
+      "version": "v0.27.2",
+      "purl": "pkg:golang/k8s.io/api@v0.27.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:+H17AJpUMvl+clT+BPnKf0E3ksMAzoBBg7CntpSuADo="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/apiextensions-apiserver@v0.27.2?package-id=87b301070157edab",
+      "type": "library",
+      "name": "k8s.io/apiextensions-apiserver",
+      "version": "v0.27.2",
+      "purl": "pkg:golang/k8s.io/apiextensions-apiserver@v0.27.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:iwhyoeS4xj9Y7v8YExhUwbVuBhMr3Q4bd/laClBV6Bo="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/apimachinery@v0.27.2?package-id=bcc8e8399138a684",
+      "type": "library",
+      "name": "k8s.io/apimachinery",
+      "version": "v0.27.2",
+      "purl": "pkg:golang/k8s.io/apimachinery@v0.27.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:vBjGaKKieaIreI+oQwELalVG4d8f3YAMNpWLzDXkxeg="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/client-go@v0.27.2?package-id=329bdf038f6b2321",
+      "type": "library",
+      "name": "k8s.io/client-go",
+      "version": "v0.27.2",
+      "purl": "pkg:golang/k8s.io/client-go@v0.27.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:vDLSeuYvCHKeoQRhCXjxXO45nHVv2Ip4Fe0MfioMrhE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/component-base@v0.27.2?package-id=3764e1d3705f8bb6",
+      "type": "library",
+      "name": "k8s.io/component-base",
+      "version": "v0.27.2",
+      "purl": "pkg:golang/k8s.io/component-base@v0.27.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:neju+7s/r5O4x4/txeUONNTS9r1HsPbyoPBAtHsDCpo="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/klog/v2@v2.100.1?package-id=d10faec68c972fcc",
+      "type": "library",
+      "name": "k8s.io/klog/v2",
+      "version": "v2.100.1",
+      "cpe": "cpe:2.3:a:klog:v2:v2.100.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/k8s.io/klog/v2@v2.100.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:7WCHKK6K8fNhTqfBhISHQ97KrnJNFZMcQvKp7gP/tmg="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/kube-aggregator@v0.27.2?package-id=5f58a34191f25236",
+      "type": "library",
+      "name": "k8s.io/kube-aggregator",
+      "version": "v0.27.2",
+      "purl": "pkg:golang/k8s.io/kube-aggregator@v0.27.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:jfHoPip+qN/fn3OcrYs8/xMuVYvkJHKo0H0DYciqdns="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/kube-openapi@v0.0.0-20230515203736-54b630e78af5?package-id=54febb2dcdf3c467",
+      "type": "library",
+      "name": "k8s.io/kube-openapi",
+      "version": "v0.0.0-20230515203736-54b630e78af5",
+      "purl": "pkg:golang/k8s.io/kube-openapi@v0.0.0-20230515203736-54b630e78af5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:azYPdzztXxPSa8wb+hksEKayiz0o+PPisO/d+QhWnoo="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/utils@v0.0.0-20230505201702-9f6742963106?package-id=778b7d4fab3af0af",
+      "type": "library",
+      "name": "k8s.io/utils",
+      "version": "v0.0.0-20230505201702-9f6742963106",
+      "purl": "pkg:golang/k8s.io/utils@v0.0.0-20230505201702-9f6742963106",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:EObNQ3TW2D+WptiYXlApGNLVy0zm/JIBVY9i+M4wpAU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/netbase@6.3?arch=all&distro=debian-11&package-id=dc6036fa60ec7385",
+      "type": "library",
+      "publisher": "Marco d'Itri <md@linux.it>",
+      "name": "netbase",
+      "version": "6.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:netbase:netbase:6.3:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/netbase@6.3?arch=all&distro=debian-11",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/netbase/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/netbase"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:6fbdf253bbc2490dcfede5bdb58ca0db63ee8aff565f6ea9f918f3bce9e2d5aa"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/var/lib/dpkg/status.d/netbase.md5sums"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "41"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/controller-runtime@v0.15.0?package-id=ae94816bffdaa4c3",
+      "type": "library",
+      "name": "sigs.k8s.io/controller-runtime",
+      "version": "v0.15.0",
+      "purl": "pkg:golang/sigs.k8s.io/controller-runtime@v0.15.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:ML+5Adt3qZnMSYxZ7gAverBLNPSMQEibtzAgp0UPojU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/gateway-api@v0.7.0?package-id=da13e8217d643352",
+      "type": "library",
+      "name": "sigs.k8s.io/gateway-api",
+      "version": "v0.7.0",
+      "purl": "pkg:golang/sigs.k8s.io/gateway-api@v0.7.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:/mG8yyJNBifqvuVLW5gwlI4CQs0NR/5q4BKUlf1bVdY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/json@v0.0.0-20221116044647-bc3834ca7abd?package-id=3b864a3ad11fa9f4",
+      "type": "library",
+      "name": "sigs.k8s.io/json",
+      "version": "v0.0.0-20221116044647-bc3834ca7abd",
+      "purl": "pkg:golang/sigs.k8s.io/json@v0.0.0-20221116044647-bc3834ca7abd",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:EDPBXCAspyGV4jQlpZSudPeMmr1bNJefnuqLsRAsHZo="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.3?package-id=812f72dcf19f0a08",
+      "type": "library",
+      "name": "sigs.k8s.io/structured-merge-diff/v4",
+      "version": "v4.2.3",
+      "cpe": "cpe:2.3:a:structured-merge-diff:v4:v4.2.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:structured_merge_diff:v4:v4.2.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:structured-merge:v4:v4.2.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:structured_merge:v4:v4.2.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:structured:v4:v4.2.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:PRbqxJClWWYMNV1dhaG4NsibJbArud9kFxnAMREiWFE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/yaml@v1.3.0?package-id=c7d54132f9eb6f9c",
+      "type": "library",
+      "name": "sigs.k8s.io/yaml",
+      "version": "v1.3.0",
+      "purl": "pkg:golang/sigs.k8s.io/yaml@v1.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:a42e8ffa3fe5c07c85d8a51fe1dc658afca64f1122bd72d0042d85912ac7dfbf"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/cmd/cainjector/cainjector"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.20.4"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:a2VclLzOGrwOHDiV8EfBGhvjHvP46CtW5j6POvhYGGo="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "command-line-arguments"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tzdata@2021a-1+deb11u10?arch=all&distro=debian-11&package-id=b5e65d160035a289",
+      "type": "library",
+      "publisher": "GNU Libc Maintainers <debian-glibc@lists.debian.org>",
+      "name": "tzdata",
+      "version": "2021a-1+deb11u10",
+      "cpe": "cpe:2.3:a:tzdata:tzdata:2021a-1\\+deb11u10:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/tzdata@2021a-1+deb11u10?arch=all&distro=debian-11",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:7bea6b893187b14fc0a759fe5f8972d1292a9c0554c87cbf485f0947c26b8a05"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/tzdata/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:7bea6b893187b14fc0a759fe5f8972d1292a9c0554c87cbf485f0947c26b8a05"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/tzdata"
+        },
+        {
+          "name": "syft:location:2:layerID",
+          "value": "sha256:7bea6b893187b14fc0a759fe5f8972d1292a9c0554c87cbf485f0947c26b8a05"
+        },
+        {
+          "name": "syft:location:2:path",
+          "value": "/var/lib/dpkg/status.d/tzdata.md5sums"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "3413"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "name": "debian",
+      "version": "11",
+      "description": "Debian GNU/Linux 11 (bullseye)",
+      "swid": {
+        "tagId": "debian",
+        "name": "debian",
+        "version": "11"
+      },
+      "externalReferences": [
+        {
+          "url": "https://bugs.debian.org/",
+          "type": "issue-tracker"
+        },
+        {
+          "url": "https://www.debian.org/",
+          "type": "website"
+        },
+        {
+          "url": "https://www.debian.org/support",
+          "comment": "support",
+          "type": "other"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:distro:id",
+          "value": "debian"
+        },
+        {
+          "name": "syft:distro:prettyName",
+          "value": "Debian GNU/Linux 11 (bullseye)"
+        },
+        {
+          "name": "syft:distro:versionCodename",
+          "value": "bullseye"
+        },
+        {
+          "name": "syft:distro:versionID",
+          "value": "11"
+        }
+      ]
+    }
+  ]
+}

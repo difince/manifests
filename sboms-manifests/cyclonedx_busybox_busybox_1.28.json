@@ -1,0 +1,87 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:2e5f54fd-d2f3-4345-a581-ce0f3b592f3b",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-03-11T14:37:51+02:00",
+    "tools": [
+      {
+        "vendor": "anchore",
+        "name": "syft",
+        "version": "0.90.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "6179c35e9c19de47",
+      "type": "container",
+      "name": "busybox",
+      "version": "1.28"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "681d6786a7496611",
+      "type": "application",
+      "name": "busybox",
+      "version": "1.28.4",
+      "cpe": "cpe:2.3:a:busybox:busybox:1.28.4:*:*:*:*:*:*:*",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "binary-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "BinaryMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "binary"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:busybox:busybox:1.28.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:432b65032b9466b4dadcc5c7b11701e71d21c18400aae946b101ad16be62333a"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/["
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "name": "busybox",
+      "version": "1.28.4",
+      "description": "BusyBox v1.28.4",
+      "swid": {
+        "tagId": "busybox",
+        "name": "busybox",
+        "version": "1.28.4"
+      },
+      "properties": [
+        {
+          "name": "syft:distro:id",
+          "value": "busybox"
+        },
+        {
+          "name": "syft:distro:idLike:0",
+          "value": "busybox"
+        },
+        {
+          "name": "syft:distro:prettyName",
+          "value": "BusyBox v1.28.4"
+        },
+        {
+          "name": "syft:distro:versionID",
+          "value": "1.28.4"
+        }
+      ]
+    }
+  ]
+}
